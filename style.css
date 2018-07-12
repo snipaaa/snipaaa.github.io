@@ -1,0 +1,33 @@
+/*Limpar Padrão*/
+*{
+	margin: 0;
+	padding: 0;
+}
+/*Limpar Padrão*/
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.formulas {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulas > div {
+    width: auto;
+    margin: 15px;
+}
+
+.texto {
+    font-size: 18px;
+    text-indent: 20px;
+}
+
+.lista {
+    margin-left: 80px;
+}
