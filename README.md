@@ -1,1 +1,0 @@
-# snipaaa.github.io
