@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <!--<script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>-->
         <script type="text/javascript" async
           src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" async>
         </script>
@@ -39,7 +38,8 @@
                                         
                                         <!-- Abertura cascata Matemática-Algebra -->
                                         <div class="panel-group" id="accordion-mat-algebra">
-                            
+                                            
+                                            <!-- Potenciação -->
                                             <div class="panel panel-default">
                                                 <div class="panel-heading">
                                                     <h4 class="panel-title">
@@ -67,6 +67,7 @@
                                                 </div>
                                             </div>
                                             
+                                            <!-- Radiciação -->
                                             <div class="panel panel-default">
                                                 <div class="panel-heading">
                                                     <h4 class="panel-title">
@@ -81,7 +82,7 @@
                                                             <div>\(\LARGE \frac{\sqrt[n]{a}}{\sqrt[n]{b}} = \sqrt[n]{\frac{a}{b}}\)</div>
                                                             <div>\(\LARGE (\sqrt[n]{a})^m = \sqrt[n]{a^m}\)</div>
                                                             <div>\(\LARGE \sqrt[np]{a^mp} = \sqrt[n]{a^m}\)</div>
-                                                            <div>\(\LARGE a^{\frac{m}{n}} = \sqrt[n]{m}\)</div>
+                                                            <div>\(\LARGE a^{\frac{m}{n}} = \sqrt[n]{a^m}\)</div>
                                                         </div>
                                                         <h3>2. Racionalização</h3>
                                                         <div class="formulas">
@@ -91,9 +92,97 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            
+                                            <!-- Fatoração -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-algebra" href="#algebra-fato">Fatoração</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="algebra-fato" class="panel-collapse collapse">
+                                                    <div class="panel-body"> 
+                                                        <h3>1. Definição</h3>
+                                                        <p class="texto">Fatorar é transformar uma soma de duas ou mais parcelas em um produto de dois ou mais fatores:</p>
+                                                        <div class="formulas">
+                                                            <div>\(\LARGE ax + ay = a(x + y)\)</div>
+                                                        </div>
+                                                        <h3>2. Agrupamento</h3>
+                                                        <div class="formulas">
+                                                            <div>\(\LARGE ax + bx + ay + by = x(a + b) + y(a + b) = (a + b) \cdot (x + y) \)</div>
+                                                        </div>
+                                                        <h3>3. Diferença de quadrados</h3>
+                                                        <div class="formulas">
+                                                            <div>\(\LARGE a^2 - b^2 = (a + b) \cdot (a - b) \)</div>
+                                                        </div>
+                                                        <h3>4. Quadrado perfeito</h3>
+                                                        <div class="formulas">
+                                                            <div>\(\LARGE (a + b)^2 = a^2 + 2ab + b^2 \)</div>
+                                                            <div>\(\LARGE (a - b)^2 = a^2 - 2ab + b^2 \)</div>
+                                                        </div>
+                                                        <h3>5. Diferença de cubos</h3>
+                                                        <div class="formulas">
+                                                            <div>\(\LARGE a^3 + b^3 = (a + b) \cdot (a^2 - ab + b^2) \)</div>
+                                                            <div>\(\LARGE a^3 - b^3 = (a - b) \cdot (a^2 + ab + b^2) \)</div>
+                                                        </div>
+                                                        <h3>6. Cubo perfeito</h3>
+                                                        <div class="formulas">
+                                                            <div>\(\LARGE (a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3 \)</div>
+                                                            <div>\(\LARGE (a - b)^3 = a^3 - 3a^2b + 3ab^2 - b^3 \)</div>
+                                                            <div><h4><b>Lembrando que isso segue o binomio de newton!</b></h4></div>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Conjuntos -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-algebra" href="#algebra-conjuntos">Conjuntos</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="algebra-conjuntos" class="panel-collapse collapse">
+                                                    <div class="panel-body"> 
+                                                        <h3>1. União (\(\subset\))</h3>
+                                                        <img src="img/uniao.jpg" style="width:350px;height:255px;">
+                                                        <h3>2. Intersecção (\(\cap\))</h3>
+                                                        <img src="img/interseca_ao.jpg" style="width:350px;height:255px;">
+                                                        <h3>3. Diferença de Conjuntos</h3>
+                                                        <h4>A = {a, b, c, d}; B = {c, d} <br> A - B = {a, b}</h4>
+                                                        <img src="img/diferena_a.jpg" style="width:350px;height:255px;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Função -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-algebra" href="#algebra-f1grau">Função - Conceitos Fundamentais</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="algebra-f1grau" class="panel-collapse collapse">
+                                                    <div class="panel-body"> 
+                                                        <h3>1. Domínio, contradomínio e imagem de uma função</h3>
+                                                        <img src="img/funcao.jpg" style="width:350px;height:255px;">
+                                                        <h4><p><b>Domínio</b>: representado por todos os elementos do conjunto A = {1, 2, 3, 4, 5}</p></h4>
+                                                        <h4><p><b>Contradomínio</b>: representado por todos os elementos do conjunto B = {1, 2, 3, 4, 5, 6, 7}</p></h4>
+                                                        <h4><p><b>Imagem</b>: representada pelos elementos do contradomínio (conjunto B) que possuem correspondência com o domínio (conjunto A = {2, 3, 4, 5, 6})</p></h4>
+                                                        <h3>2. Sobrejetora</h3>
+                                                        <img src="img/sobrejetora.jpg" style="width:260px;height:147px;margin: 10px;">
+                                                        <p class="texto">Uma função é sobrejetora quando o contradomínio é igual a imagem, ou seja, <b>não pode existir sobras</b>.</p>
+                                                        <h3>3. Injetora</h3>
+                                                        <img src="img/injetora.jpg" style="width:260px;height:147px;margin: 10px;">
+                                                        <p class="texto">Uma função é injetora se elementos distintos de A têm imagens distintas em B, ou seja, <b>possuem somente uma flecha e pode existir sobras</b>.</p>
+                                                        <h3>4. Bijetora</h3>
+                                                        <img src="img/bijetora.jpg" style="width:260px;height:147px;margin: 10px;">
+                                                        <p class="texto">Uma função é bijetora quando é ao mesmo tempo sobrejetora e injetora, ou seja, <b>todos os elementos de A possuem um correspondente em B</b>.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                                        </div>
-                                        
+                                        </div> 
                                     </div>
                                 </div>
                             </div>
