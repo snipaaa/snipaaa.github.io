@@ -17,6 +17,9 @@
                 if(event.keyCode==123){
                     return false;
                 }
+                if(event.ctrlKey && event.keyCode==80){
+                    return false;
+                }
             });
         </script>
                 
@@ -337,8 +340,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-,
-                                        </div> 
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -350,8 +353,81 @@
                                     </h4>
                                 </div>
                                 <div id="trigonometria" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        Teste
+                                    <div class="panel-body">   
+                                        <!-- Abertura cascata Matemática-Algebra -->
+                                        <div class="panel-group" id="accordion-mat-trigo">
+                                            
+                                            <!-- Funções Trigonometricas -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-trigo" href="#trigonometria-func">Funções trigonométricas</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="trigonometria-func" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. sen, cos, tg</h3>
+                                                        <div class="formulas">
+                                                            <div>\(\LARGE sen = \frac{cateto \space oposto}{hipotenusa}\)</div>
+                                                            <div>\(\LARGE cos = \frac{cateto \space adjacente}{hipotenusa}\)</div>
+                                                            <div>\(\LARGE tg = \frac{cateto \space oposto}{cateto \space adjacente}\)</div>
+                                                        </div>
+                                                        <h3>2. Relações fundamentais e auxiliares</h3>
+                                                        <div class="formulas">
+                                                            <div>\(\LARGE sen^2x + cos^2x = 1\)</div>
+                                                            <div>\(\LARGE tg \space x = \frac{sen \space x}{cos \space x}\)</div>
+                                                            <div>\(\LARGE cotg \space x = \frac{1}{tg \space x} = \frac{cos \space x}{sen \space x}\)</div>
+                                                            <div>\(\LARGE sec \space x = \frac{1}{cos \space x}\)</div>
+                                                            <div>\(\LARGE cossec \space x = \frac{1}{sen \space x}\)</div>
+                                                            <h4>Relações Auxiliares:</h4>
+                                                            <div>\(\LARGE sec^2x = 1 + tg^2x\)</div>
+                                                            <div>\(\LARGE cossec^2x = 1 + cotg^2x\)</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Medidas de Arcos -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-trigo" href="#trigonometria-arcos">Medidas de Arcos</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="trigonometria-arcos" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. Definição</h3>
+                                                        <div class="formulas">
+                                                            <div>$$\LARGE \alpha = \frac{comprimento \space \widehat{AB}}{raio}$$</div>
+                                                            <img src="img/arco.jpg" style="width:233px;height:205px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                                            <div>$$\LARGE 180º \space ---- \space \pi \space rad \\ \LARGE graus \space ---- \space x \space rad$$</div>
+                                                        </div>
+                                                        <h3>2. Área do setor</h3>
+                                                        <p class="texto">Para calcular a área do setor basta realizar a seguinte regra de três:</p>
+                                                        <div>$$\LARGE 360º \space ---- \space \pi \cdot r^2 \\ \LARGE graus \space ----- \space x$$</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Estudo das Funções Trigonométricas -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-trigo" href="#trigonometria-esf">Estudo das Funções Trigonométricas</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="trigonometria-esf" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <img src="img/func_trigo1.jpg" style="width:1438px;height:957px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                                        <img src="img/func_trigo2.jpg" style="width:1180px;height:649px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                                        <img src="img/func_gif.gif" style="width:500px;height:300px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                                        <img src="img/func_gif2.gif" style="width:640px;height:278px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                                        <img src="img/func_gif3.gif" style="width:500px;height:553px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
                                     </div>
                                 </div>
                             </div>
