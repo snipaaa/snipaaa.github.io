@@ -457,6 +457,112 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                                
+                                            <!-- Matrizes -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-algebra" href="#algebra-matriz">Matrizes</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="algebra-matriz" class="panel-collapse collapse">
+                                                    <div class="panel-body"> 
+                                                        <p class="texto2">
+                                                            <b>\(A_{2x3}\)</b><br>
+                                                            \(A = \begin{bmatrix} 
+                                                            a_{11} & a_{12} & a_{13} \\
+                                                            a_{21} & a_{22} & a_{23} 
+                                                            \end{bmatrix}\)
+                                                        </p>
+                                                        <h3><b>Matriz nula</b></h3>
+                                                        <p>
+                                                            \(0_{2x3} = \begin{bmatrix} 
+                                                            0 & 0 & 0 \\
+                                                            0 & 0 & 0 
+                                                            \end{bmatrix}\)
+                                                        </p>
+                                                        <h3><b>Matriz identidade</b></h3>
+                                                        <p>
+                                                            \(I_{2} = \begin{bmatrix} 
+                                                            1 & 0 \\
+                                                            0 & 1
+                                                            \end{bmatrix}\)
+                                                            <br>
+                                                            \(I_{3} = \begin{bmatrix} 
+                                                            1 & 0 & 0 \\
+                                                            0 & 1 & 0 \\
+                                                            0 & 0 & 1
+                                                            \end{bmatrix}\)
+                                                        </p>
+                                                        <h3><b>Matriz oposta</b></h3>
+                                                        <p>
+                                                            \(A = \begin{bmatrix} 
+                                                            1 & 3 & 4 \\
+                                                            2 & 1 & -4 
+                                                            \end{bmatrix}
+                                                            \Rightarrow
+                                                            -A = \begin{bmatrix} 
+                                                            -1 & -3 & -4 \\
+                                                            -2 & -1 & 4 
+                                                            \end{bmatrix}
+                                                            \)
+                                                        </p>
+                                                        <h3><b>Matriz transposta</b></h3>
+                                                        <p>
+                                                            \(A = \begin{bmatrix} 
+                                                            1 & 3 & 7 \\
+                                                            2 & 4 & 6 
+                                                            \end{bmatrix}
+                                                            \Rightarrow
+                                                            A^{t} \begin{bmatrix} 
+                                                            1 & 2 \\
+                                                            3 & 4 \\
+                                                            7 & 6
+                                                            \end{bmatrix}
+                                                            \)
+                                                        </p>
+                                                        <h3><b>Adição, subtração e multiplicação por número real</b></h3>
+                                                        <p>
+                                                            \(A = \begin{bmatrix} 
+                                                            1 & 3 & 7 \\
+                                                            2 & 4 & 6 
+                                                            \end{bmatrix}
+                                                            \Rightarrow
+                                                            3 \cdot A = \begin{bmatrix} 
+                                                            3 & 9 & 21 \\
+                                                            6 & 12 & 18 
+                                                            \end{bmatrix}
+                                                            \Rightarrow
+                                                            3 \cdot A - A = \begin{bmatrix} 
+                                                            2 & 6 & 14 \\
+                                                            4 & 8 & 12 
+                                                            \end{bmatrix}
+                                                            \)
+                                                        </p>
+                                                        <h3><b>Multiplicação de 2 matrizes</b></h3>
+                                                        <p class="texto2">
+                                                            Sendo \(\LARGE A_{mxn} \cdot B_{pxq} \textrm{ n precisa obrigatoriamente ser igual a p, linhas = colunas}\)
+                                                            <br><b>Só aplicar linha x coluna!</b><br>
+                                                            \(\LARGE \begin{bmatrix} 
+                                                            2 & 3 & 1 \\
+                                                            0 & 1 & 2 
+                                                            \end{bmatrix}
+                                                            \cdot
+                                                            \begin{bmatrix} 
+                                                            2 & 0 \\
+                                                            1 & -1 \\
+                                                            3 & 5
+                                                            \end{bmatrix}
+                                                            =
+                                                            \begin{bmatrix} 
+                                                            10 & 2 \\
+                                                            7 & 9 \\
+                                                            \end{bmatrix}
+                                                            \)
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
 
                                         </div>
                                     </div>
@@ -471,7 +577,7 @@
                                 </div>
                                 <div id="trigonometria" class="panel-collapse collapse">
                                     <div class="panel-body">   
-                                        <!-- Abertura cascata Matemática-Algebra -->
+                                        <!-- Abertura cascata Matemática-Trigonometria -->
                                         <div class="panel-group" id="accordion-mat-trigo">
                                             
                                             <!-- Funções Trigonometricas -->
