@@ -886,6 +886,49 @@
                                                 </div>
                                             </div>
                                             
+                                            <!-- Movimento Circular -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-fis-cinematica" href="#fis-cinematica-circular">Movimento Circular</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="fis-cinematica-circular" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. Ângulo</h3>
+                                                        <img src="img/mcu1.GIF" style="max-width:100%;max-height:100%;margin: 25px; margin-left: 0px">
+                                                        <div>\(\LARGE \theta = \frac{S}{R}\)</div>
+                                                        <h3>2. Período (T) e frequência (f)</h3>
+                                                        <p class="texto3">
+                                                            <b>T</b>: tempo gasto numa volta completa.<br>
+                                                            <b>f</b>: número de voltas (n) num certo intervalo de tempo (t)
+                                                        </p>
+                                                        <div>\(\LARGE f = \frac{n}{\Delta t}\)</div>
+                                                        <p class="texto3">Relações entre T e f:</p>
+                                                        <div>\(\LARGE T = \frac{1}{f} \space ou \space f = \frac{1}{T}\)</div>
+                                                        <h3>3. Velocidade angular média</h3>
+                                                        <div>\(\LARGE \omega_m = \frac{\Delta \theta}{\Delta t}\)</div>
+                                                        <h3>4. Aceleração angular média</h3>
+                                                        <div>\(\LARGE \gamma = \frac{\Delta \omega}{\Delta t}\)</div>
+                                                        <h3>5. Movimento circular uniforme (MCU)</h3>
+                                                        <div>\(\LARGE \omega = \frac{2 \pi}{T} \space ou \space \omega = 2 \pi \cdot f\)</div>
+                                                        <p class="texto3">Relação entre \(\LARGE \omega\) e o V</p>
+                                                        <div>\(\LARGE V = \frac{\Delta S}{\Delta t} = \frac{2 \pi \cdot R}{T} \Rightarrow V = \omega \cdot R\)</div>
+                                                        <p class="texto3">Função horária do espaço angular</p>
+                                                        <div>\(\LARGE \theta = \theta_0 + \omega \cdot t \)</div>
+                                                        <h3>6. Movimento uniformemente variado (MCUV)</h3>
+                                                        <p class="texto3">Aceleração angular e escalar</p>
+                                                        <div>\(\LARGE a = \frac{\Delta V}{\Delta t} = \frac{\Delta \omega \cdot R}{\Delta t} \Rightarrow \gamma = \frac{a}{R}\)</div>
+                                                        <p class="texto3">Equações do MCUV</p>
+                                                        <ul class="lista">
+                                                            <li><div>\(\LARGE \theta = \theta_0 + \omega_0 t + \frac{\gamma \cdot t^2}{2}\)</div></li>
+                                                            <li><div>\(\LARGE \omega = \omega_0 + \gamma t\)</div></li>
+                                                            <li><div>\(\LARGE \omega^2 = \omega_0^2 + 2\gamma \Delta \theta\)</div></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
                                         </div>
                                         
                                     </div>
@@ -1035,7 +1078,9 @@
                                                         </p>
                                                         <h3>6. Máquina térmica</h3>
                                                         <p class="texto2">
-                                                            \(\LARGE Rendimento \Rightarrow \eta = 1 - \frac{T_B}{T_A}\)<br>
+                                                            \(\LARGE Rendimento \Rightarrow \eta = 1 - \frac{T_2}{T_1}\)<br>
+                                                            \(\LARGE Rendimento \Rightarrow \eta = 1 - \frac{Q_2}{Q_1}\)<br>
+                                                            <img src="img/maquina_termica.jpg" style="max-width:100%;max-height:100%;margin: 25px;"><br>
                                                         </p>
                                                         <h3>7. Segunda Lei da Termodinâmica</h3>
                                                         <p class="texto2">
@@ -1050,7 +1095,106 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>   
+                            </div>
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-fis" href="#fis-eletrodinamica">Eletrodinâmica</a>
+                                    </h4>
+                                </div>
+                                <div id="fis-eletrodinamica" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        
+                                        <!-- Abertura cascata Eletrodinâmica -->
+                                        <div class="panel-group" id="accordion-fis-eletrodinamica">
+                                            
+                                            <!-- Corrente e tensão elétrica -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-fis-eletrodinamica" href="#fis-termologia-correntetensao">Corrente e tensão elétrica</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="fis-termologia-correntetensao" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <p class="texto2">
+                                                            <b>Tensão</b>: U, voltagem<br>
+                                                            <b>Intensidade</b>: i<br>
+                                                            <b>e</b>: \(\LARGE 1,6 \cdot 10^{-19}\)<br>
+                                                            \(\LARGE Q = n \cdot e\)<br>
+                                                            \(\LARGE Q = i \cdot \Delta t\)<br>
+                                                            \(\LARGE 1V = \frac{1J}{1C}\)<br>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Resistores -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-fis-eletrodinamica" href="#fis-termologia-resistores">Resistores</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="fis-termologia-resistores" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <p class="texto2">
+                                                            <b>Efeito Joule</b>: quando um resistor é percorrido por corrente elétrica, ocorre a transformação de energia elétrica em energia térmica, devido ao choque dos elétrons livres com os átomos do condutor.
+                                                        </p>
+                                                        <h3>1. Primeira Lei de Ohm</h3>
+                                                        <p>\(\LARGE U = r \cdot i\)</p>
+                                                        <h3>2. Segunda lei de Ohm</h3>
+                                                        <p>\(\LARGE R = p \cdot \frac{l}{A}\)</p>
+                                                        <h3>3. Associação de resistores em sér<b>i</b>e</h3>
+                                                        <p class="texto2">
+                                                            \(\LARGE U = U_1 + U_2 + U_3\)<br>
+                                                            \(\LARGE R = R_1 + R_2 + R_3\)<br>
+                                                            Com i igual para o circuito inteiro
+                                                        </p>
+                                                        <h3>4. Associação de resistores em paralel<b>u</b></h3>
+                                                        <p class="texto2">
+                                                            \(\LARGE I = I_1 + I_2 + I_3\)<br>
+                                                            \(\LARGE \frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}\)<br>
+                                                            Com U igual para o circuito inteiro<br>
+                                                            \(\LARGE R = \frac{R_1 \cdot R_2}{R_1 + R_2}\)
+                                                        </p>
+                                                        <h3>5. Gerador Real</h3>
+                                                        <p>\(\LARGE U = E - r \cdot i\)</p>
+                                                        <p>\(\LARGE \textrm{Lei de Pouillet } i = \frac{E}{r + R}\)</p>
+                                                        <h3>6. Associação de geradores em série</h3>
+                                                        <p class="texto2">
+                                                            \(\LARGE U = U_1 + U_2 + U_3\)<br>
+                                                            \(\LARGE E = E_1 + E_2 + E_3\)<br>
+                                                            \(\LARGE r = r_1 + r_2 + r_3\)<br>
+                                                        </p>
+                                                        <h3>7. Associação de geradores em paralelo</h3>
+                                                        <p class="texto2">
+                                                            \(\LARGE I = i_1 + i_2 + i_3\)<br>
+                                                            \(\LARGE E = E\)<br>
+                                                            \(\LARGE r_p = \frac{r}{n}\)<br>
+                                                            \(\LARGE r_p = \frac{r_1 + r_2}{2}\)<br>
+                                                        </p>
+                                                        <h3>8. Circuito gerador-receptor</h3>
+                                                        <p>\(\LARGE i = \frac{\sum E - \sum E'}{\sum r + \sum r' + \sum R}\)</p>
+                                                        <h3>9. Potência</h3>
+                                                        <p>\(\LARGE \textrm{Potência total } P = U \cdot i\)</p>
+                                                        <p>\(\LARGE \textrm{Potência dissipada } P = R \cdot i^2\)</p>
+                                                        <p>\(\LARGE P = \frac{E}{\Delta t}\)</p>
+                                                        <p>\(\LARGE 1W = 1 \frac{J}{s}\)</p>
+                                                        <p>\(\LARGE P = \frac{U^2}{R}\)</p>
+                                                        <h3>10. Método da ponte de Wheatstone</h3>
+                                                        <p>\(\LARGE R_1 \cdot R_3 = R_2 \cdot R_4\)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
