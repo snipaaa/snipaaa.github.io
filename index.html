@@ -844,6 +844,7 @@
                         <!-- Abertura cascata Física -->
                         <div class="panel-group" id="accordion-fis">
                             
+                            <!-- Abertura cascata Cinemática -->
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
@@ -852,8 +853,6 @@
                                 </div>
                                 <div id="fis-cinematica" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        
-                                        <!-- Abertura cascata Cinemática -->
                                         <div class="panel-group" id="accordion-fis-cinematica">
                                             
                                             <!-- Cinemática -->
@@ -929,12 +928,27 @@
                                                 </div>
                                             </div>
                                             
+                                            <!-- Lançamento de projéteis -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-fis-cinematica" href="#fis-cinematica-projeteis">Lançamento de projéteis</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="fis-cinematica-projeteis" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. Alcance</h3>
+                                                        <div>\(\LARGE D = \frac{V_0^2}{g} \cdot sen 2 \alpha\)</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
                                         </div>
-                                        
                                     </div>
                                 </div>
                             </div>
                             
+                            <!-- Abertura cascata Termologia -->
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
@@ -943,8 +957,6 @@
                                 </div>
                                 <div id="fis-termologia" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        
-                                        <!-- Abertura cascata Termologia -->
                                         <div class="panel-group" id="accordion-fis-termologia">
                                             
                                             <!-- Termometria -->
@@ -1097,6 +1109,7 @@
                                 </div>
                             </div>
                             
+                            <!-- Abertura cascata Eletrodinâmica -->
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
@@ -1105,8 +1118,6 @@
                                 </div>
                                 <div id="fis-eletrodinamica" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        
-                                        <!-- Abertura cascata Eletrodinâmica -->
                                         <div class="panel-group" id="accordion-fis-eletrodinamica">
                                             
                                             <!-- Corrente e tensão elétrica -->
@@ -1190,7 +1201,95 @@
                                             </div>
                                             
                                         </div>
-                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Abertura cascata Dinâmica -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-fis" href="#fis-dinamica">Dinâmica</a>
+                                    </h4>
+                                </div>
+                                <div id="fis-dinamica" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="panel-group" id="accordion-fis-termologia">
+                                            
+                                           <!-- Conceitos -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-fis-dinamica" href="#fis-dinamica-intro">Conceitos</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="fis-dinamica-intro" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. Tipos de forças</h3>
+                                                        <ul class="lista">
+                                                            <li>Força peso: \(\LARGE P = m \cdot g\)</li>
+                                                            <li>Força normal: reação ao contato, sendo perpendicular à superficie\)</li>
+                                                            <li>Força tração: força com tração, cordas...\)</li>
+                                                            <li>Força elástica: molas\)</li>
+                                                        </ul>
+                                                        <h3>2. Leis de Newton</h3>
+                                                        <ul class="lista">
+                                                            <li>Primeira Lei: Inércia</li>
+                                                            <li>Segunda Lei: \(\LARGE F_r = m \cdot a\)</li>
+                                                            <li>Terceira Lei: Ação e reação</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            
+                                            <!-- Força Elástica -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-fis-dinamica" href="#fis-dinamica-elastica">Força Elástica</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="fis-dinamica-elastica" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. Lei de Hooke</h3>
+                                                        <div>\(\LARGE F = k \cdot x \textrm{ onde } x = L - L_0\)</div>
+                                                        <h3>2. Associação de molas em série</h3>
+                                                        <div>\(\LARGE X_{eq} = x_1 + x_2\)</div>
+                                                        <div>\(\LARGE \frac{1}{K_{eq}} = \frac{1}{K_1} + \frac{1}{K_2}\)</div>
+                                                        <h3>3. Associação de molas em paralelo</h3>
+                                                        <div>\(\LARGE K_{eq} = K_1 + K_2\)</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Polias e Roldanas -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-fis-dinamica" href="#fis-dinamica-polias">Polias e Roldanas</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="fis-dinamica-polias" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. Roldana Fixa</h3>
+                                                        <p class="texto2">\(\LARGE F = P\)</p>
+                                                        <img src="img/roldanafixa.png" style="width:260px;height:291px;margin: 25px;">
+                                                        <h3>2. Roldana Móvel</h3>
+                                                        <p class="texto2">\(\LARGE 2T_2 = T_1\)</p>
+                                                        <p class="texto2">\(\LARGE T_1 = P\)</p>
+                                                        <p class="texto2">\(\LARGE F = T_2 = \frac{T_1}{2}\)</p>
+                                                        <img src="img/roldanamovel.webp" style="width:335px;height:214px;margin: 25px;">
+                                                        <h3>3. Talha Exponencial</h3>
+                                                        <p class="texto2">\(\LARGE F = \frac{P}{2^n}\)</p>
+                                                        <img src="img/talhaexponencial.png" style="width:269px;height:160px;margin: 25px;">
+                                                        <h3>4. Moitão</h3>
+                                                        <p class="texto2">\(\LARGE 4F = P\)</p>
+                                                        <img src="img/moitao.gif" style="width:361px;height:340px;margin: 25px;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
                                     </div>
                                 </div>
                             </div>
