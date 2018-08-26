@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>Projeto USP</title>
+		<meta charset="utf-8"/>	
+		<style>
+			body{
+				margin: 0 auto;
+				background-color: white;
+			}
+
+			.container{
+				width: 1500px;
+				height: 50px;
+				margin: 0 auto;
+				text-align: center;
+			}
+
+			.container h1{
+				font-size: 150px;
+				color: black;
+			}
+
+			.container h2{
+				font-size: 60px;
+				color: black;
+			}
+			
+			#demo {
+				font-size: 80px;
+				color: black;
+			}
+		</style>
+		<script>
+			var countDownDate = new Date("Nov 25, 2018 13:00:00").getTime();
+
+			var x = setInterval(function() {
+				var now = new Date().getTime();
+
+				var distance = countDownDate - now;
+
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+				document.getElementById("demo").innerHTML = days + " dias " + hours + "h "
+				+ minutes + "m " + seconds + "s ";
+
+				if (distance < 0) {
+					clearInterval(x);
+					document.getElementById("demo").innerHTML = "EXPIRED";
+				}
+			}, 100);
+		</script>
+	</head>
+
+	<body>
+
+		<div class="container">
+			<h1>PASSAR NA USP</h1>
+			<h2>Que bonito, tá fazendo o que aqui filho??</h2>
+			<h2>Já estudou hoje?</h2>
+			<h2>Enquanto você continua olhando pra essa merda 30 japas passaram na sua frente</h2>
+			<p id="demo"></p>
+		</div>
+		
+	</body>
+	
+</html>
