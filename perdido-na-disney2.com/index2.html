@@ -1,0 +1,1780 @@
+<!doctype html>
+<html>
+    
+    <head>
+        <title>Estudos</title>
+		<meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" async
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" async>
+        </script>
+        
+        <script language="JavaScript">
+            $(document).keydown(function(event){
+                if(event.keyCode==123){
+                    return false;
+                }
+                if(event.ctrlKey && event.keyCode==80){
+                    return false;
+                }
+            });
+        </script>
+                
+        <script language="JavaScript">
+          window.onload = function() {
+            document.addEventListener("contextmenu", function(e){
+              e.preventDefault();
+            }, false);
+            document.addEventListener("keydown", function(e) {
+              // "I"
+              if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                disabledEvent(e);
+              }
+              // "J"
+              if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                disabledEvent(e);
+              }
+              // "S" mac
+              if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+                disabledEvent(e);
+              }
+              // "U"
+              if (e.ctrlKey && e.keyCode == 85) {
+                disabledEvent(e);
+              }
+              // "F12"
+              if (event.keyCode == 123) {
+                disabledEvent(e);
+              }
+              // "C"
+              if (event.keyCode == 67) {
+                disabledEvent(e);
+              }
+              // "V"
+              if (event.keyCode == 86) {
+                disabledEvent(e);
+              }
+              // "P"
+              if (event.keyCode == 80) {
+                disabledEvent(e);
+              } 
+            }, false);
+            function disabledEvent(e){
+              if (e.stopPropagation){
+                e.stopPropagation();
+              } else if (window.event){
+                window.event.cancelBubble = true;
+              }
+              e.preventDefault();
+              return false;
+            }
+          };
+        </script>
+        
+    </head>
+    
+    <body oncontextmenu="return false">
+        <div class="panel-group" id="accordion">
+            
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#matematica">Matemática</a>
+                    </h4>
+                </div>
+                <div id="matematica" class="panel-collapse collapse">
+                    <div class="panel-body">                      
+                        <!-- Abertura cascata Matemática -->
+                        <div class="panel-group" id="accordion-mat">
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-mat" href="#algebra">Algebra</a>
+                                    </h4>
+                                </div>
+                                <div id="algebra" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        
+                                        <!-- Abertura cascata Matemática-Algebra -->
+                                        <div class="panel-group" id="accordion-mat-algebra">
+                                            
+                                            <!-- Potenciação -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-algebra" href="#algebra-pot">Potenciação</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="algebra-pot" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. Definições</h3>
+                                                        <div class="formulas">
+                                                            <div>\(\LARGE a^n = n . n . n . n...\)</div>
+                                                            <div>\(\LARGE a^0 = 1\)</div>
+                                                            <div>\(\LARGE a^1 = a\)</div>
+                                                            <div>\(\LARGE a^{-n} = \frac{1}{a^n}\)</div>
+                                                        </div>
+                                                        <h3>2. Propriedades</h3>
+                                                        <div class="formulas">
+                                                            <div>\(\LARGE a^m . a^n = a^{a + m}\)</div>
+                                                            <div>\(\LARGE \frac{a^m}{a^n} = a^{m - n}\)</div>
+                                                            <div>\(\LARGE a^n . b^n =(ab)^n\)</div>
+                                                            <div>\(\LARGE \frac{a^n}{b^n} = (\frac{a}{b})^n\)</div>
+                                                            <div>\(\LARGE (a^m)^n = a^{m.n}\)</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Radiciação -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-algebra" href="#algebra-rad">Radiciação</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="algebra-rad" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. Propriedades</h3>
+                                                        <div class="formulas">
+                                                            <div>\(\LARGE \sqrt[n]{a} \cdot \sqrt[n]{b} = \sqrt[n]{a.b} \quad com \quad a, b \geqslant 0\)</div>
+                                                            <div>\(\LARGE \frac{\sqrt[n]{a}}{\sqrt[n]{b}} = \sqrt[n]{\frac{a}{b}}\)</div>
+                                                            <div>\(\LARGE (\sqrt[n]{a})^m = \sqrt[n]{a^m}\)</div>
+                                                            <div>\(\LARGE \sqrt[np]{a^mp} = \sqrt[n]{a^m}\)</div>
+                                                            <div>\(\LARGE a^{\frac{m}{n}} = \sqrt[n]{a^m}\)</div>
+                                                        </div>
+                                                        <h3>2. Racionalização</h3>
+                                                        <div class="formulas">
+                                                            <div>\(\LARGE \frac{2}{\sqrt{3}} = \frac{2}{\sqrt{3}} \cdot \frac{\sqrt{3}}{\sqrt{3}}\)</div>
+                                                            <div>\(\LARGE \frac{4}{2 + \sqrt{3}} = \frac{4}{2 + \sqrt{3}} \cdot \frac{2 - \sqrt{3}}{2 - \sqrt{3}}\)</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Fatoração -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-algebra" href="#algebra-fato">Fatoração</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="algebra-fato" class="panel-collapse collapse">
+                                                    <div class="panel-body"> 
+                                                        <h3>1. Definição</h3>
+                                                        <p class="texto">Fatorar é transformar uma soma de duas ou mais parcelas em um produto de dois ou mais fatores:</p>
+                                                        <div class="formulas">
+                                                            <div>\(\LARGE ax + ay = a(x + y)\)</div>
+                                                        </div>
+                                                        <h3>2. Agrupamento</h3>
+                                                        <div class="formulas">
+                                                            <div>\(\LARGE ax + bx + ay + by = x(a + b) + y(a + b) = (a + b) \cdot (x + y) \)</div>
+                                                        </div>
+                                                        <h3>3. Diferença de quadrados</h3>
+                                                        <div class="formulas">
+                                                            <div>\(\LARGE a^2 - b^2 = (a + b) \cdot (a - b) \)</div>
+                                                        </div>
+                                                        <h3>4. Quadrado perfeito</h3>
+                                                        <div class="formulas">
+                                                            <div>\(\LARGE (a + b)^2 = a^2 + 2ab + b^2 \)</div>
+                                                            <div>\(\LARGE (a - b)^2 = a^2 - 2ab + b^2 \)</div>
+                                                        </div>
+                                                        <h3>5. Diferença de cubos</h3>
+                                                        <div class="formulas">
+                                                            <div>\(\LARGE a^3 + b^3 = (a + b) \cdot (a^2 - ab + b^2) \)</div>
+                                                            <div>\(\LARGE a^3 - b^3 = (a - b) \cdot (a^2 + ab + b^2) \)</div>
+                                                        </div>
+                                                        <h3>6. Cubo perfeito</h3>
+                                                        <div class="formulas">
+                                                            <div>\(\LARGE (a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3 \)</div>
+                                                            <div>\(\LARGE (a - b)^3 = a^3 - 3a^2b + 3ab^2 - b^3 \)</div>
+                                                            <div><h4><b>Lembrando que isso segue o binomio de newton!</b></h4></div>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Conjuntos -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-algebra" href="#algebra-conjuntos">Conjuntos</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="algebra-conjuntos" class="panel-collapse collapse">
+                                                    <div class="panel-body"> 
+                                                        <h3>1. União (\(\cup\))</h3>
+                                                        <img src="img/uniao.jpg" style="width:350px;height:255px;">
+                                                        <h3>2. Intersecção (\(\cap\))</h3>
+                                                        <img src="img/interseca_ao.jpg" style="width:350px;height:255px;">
+                                                        <h3>3. Diferença de Conjuntos</h3>
+                                                        <h4>A = {a, b, c, d}; B = {c, d} <br> A - B = {a, b}</h4>
+                                                        <img src="img/diferena_a.jpg" style="width:350px;height:255px;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Função -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-algebra" href="#algebra-f1grau">Função - Conceitos Fundamentais</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="algebra-f1grau" class="panel-collapse collapse">
+                                                    <div class="panel-body"> 
+                                                        <h3>1. Domínio, contradomínio e imagem de uma função</h3>
+                                                        <img src="img/funcao.jpg" style="width:350px;height:255px;">
+                                                        <h4><p><b>Domínio</b>: representado por todos os elementos do conjunto A = {1, 2, 3, 4, 5}</p></h4>
+                                                        <h4><p><b>Contradomínio</b>: representado por todos os elementos do conjunto B = {1, 2, 3, 4, 5, 6, 7}</p></h4>
+                                                        <h4><p><b>Imagem</b>: representada pelos elementos do contradomínio (conjunto B) que possuem correspondência com o domínio (conjunto A = {2, 3, 4, 5, 6})</p></h4>
+                                                        <h3>2. Sobrejetora</h3>
+                                                        <img src="img/sobrejetora.jpg" style="width:260px;height:147px;margin: 10px;">
+                                                        <p class="texto">Uma função é sobrejetora quando o contradomínio é igual a imagem, ou seja, <b>não pode existir sobras</b>.</p>
+                                                        <h3>3. Injetora</h3>
+                                                        <img src="img/injetora.jpg" style="width:260px;height:147px;margin: 10px;">
+                                                        <p class="texto">Uma função é injetora se elementos distintos de A têm imagens distintas em B, ou seja, <b>possuem somente uma flecha e pode existir sobras</b>.</p>
+                                                        <h3>4. Bijetora</h3>
+                                                        <img src="img/bijetora.jpg" style="width:260px;height:147px;margin: 10px;">
+                                                        <p class="texto">Uma função é bijetora quando é ao mesmo tempo sobrejetora e injetora, ou seja, <b>todos os elementos de A possuem um correspondente em B</b>.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Função do 1º Grau -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-algebra" href="#algebra-f1agrau">Função do 1º Grau (Linear)</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="algebra-f1agrau" class="panel-collapse collapse">
+                                                    <div class="panel-body"> 
+                                                        <h3>1. Definição</h3>
+                                                        <p class="texto">
+                                                            Chama-se função polinomial do 1º grau a toda função \(f:R \rightarrow R\) definida por:
+                                                            <br>
+                                                            $$\LARGE f(x) = ax + b$$
+                                                        </p>
+                                                        <img src="img/funcao1grau.jpg" style="width:600px;height:320px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                                        <h3>2. Inequação do 1º Grau</h3>
+                                                        <p class="texto">Chama-se inequação toda sentença do tipo ax + b > 0. Para resolver basta isolar o x:
+                                                            \(\large \quad 2x - 6 > 0 \rightarrow 2x > 6 \rightarrow x > 3\)
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Função do 2º Grau -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-algebra" href="#algebra-f2agrau">Função do 2º Grau (Quadratica)</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="algebra-f2agrau" class="panel-collapse collapse">
+                                                    <div class="panel-body"> 
+                                                        <h3>1. Definição</h3>
+                                                        <p class="texto">
+                                                            Chama-se função polinomial do 2º grau a toda função \(f:R \rightarrow R\) definida por:
+                                                            <br>
+                                                            $$\LARGE f(x) = ax^2 + bx + c$$
+                                                        </p>
+                                                        <p class="texto2">
+                                                            a > 0 - Curvatura para cima <br>
+                                                            a < 0 - Curvatura para baixo <br>
+                                                            <br>
+                                                            b > 0 - Atravessa o eixo y crecendo <br>
+                                                            b < 0 - Atravessa o eixo y descrescendo <br>
+                                                            b = 0 - Atravessa o eixo y horizontalmente <br>
+                                                            <br>
+                                                            c - Onde o gráfico corta o eixo y
+                                                            
+                                                        </p>
+                                                        <h3>2. Vértica da parábola</h3>
+                                                        <p class="texto">
+                                                            Basta encontrar o x e depois substituir no y com a fórmula:<br>
+                                                            $$\LARGE \frac{-b}{2a}$$
+                                                        </p>
+                                                        <h3>2. Inequação do 2º Grau</h3>
+                                                        <p class="texto">Chama-se inequação toda sentença do tipo \(ax^2 + bx + c > 0\). Para resolver basta analisar no gráfico onde está sentença é verdadeira:
+                                                            $$\large x^2 + 2x - 3 > 0$$
+                                                        </p>
+                                                        <img src="img/inequacao_2grau.png" style="width:300px;height:250px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                                        <p class="texto2">
+                                                            V = {xER | x < -3 ou x > 1} <br>
+                                                            Quando x é menor que -3 e maior que 1 a sentença é verdadeira.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Função Exponencial  -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-algebra" href="#algebra-fexpo">Função Exponencial</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="algebra-fexpo" class="panel-collapse collapse">
+                                                    <div class="panel-body"> 
+                                                        <h3>1. Definição</h3>
+                                                        <p class="texto">
+                                                            Chama-se função polinomial do 2º grau a toda função definida por:
+                                                            <br>
+                                                            $$\LARGE f(x) = a^x$$
+                                                        </p>
+                                                        <img src="img/funcao_exponencial.gif" style="width:471px;height:208px;display: block;margin: 25px;margin-left: auto;margin-right: auto;"> 
+                                                        <h3>2. Inequação Exponencial</h3>
+                                                        <p class="texto">Chama-se inequação toda sentença do tipo \(\large a^x > b\). Para resolver basta igualar as bases:
+                                                            $$\large \left( \frac{1}{3} \right)^x < \left( \frac{1}{3} \right)^2$$
+                                                        </p>
+                                                        <p class="texto2">
+                                                            Como as bases estão entre 0 e 1, 0 < a < 1, deve-se inverter o sinal:<br>
+                                                            V = {xER | x > 2}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Logaritmo  -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-algebra" href="#algebra-log">Logaritmo</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="algebra-log" class="panel-collapse collapse">
+                                                    <div class="panel-body"> 
+                                                        <h3>1. Definição</h3>
+                                                        <p class="texto">
+                                                            Chama-se logaritmo de um número onde N > 0 em uma base a, com a > 0 e a != 1, definido por:
+                                                            <br>
+                                                            $$\LARGE \log_a N = a^x = N$$
+                                                        </p>
+                                                        <h3>2. Propriedades</h3>
+                                                        <div class="formulas">
+                                                            <div>\(\LARGE \log_a (M \cdot N) = \log_a M + \log_a N\)</div>
+                                                            <div>\(\LARGE \log_a \left(\frac{M}{N} \right) = \log_a M - \log_a N\)</div>
+                                                            <div>\(\LARGE \log_a (N^m) = m \cdot \log_a N\)</div>
+                                                            <div>\(\LARGE \log_a (\sqrt[m]{N}) = \frac{1}{m} \cdot \log_a N\)</div>
+                                                            <div>\(\LARGE \log_a N = \frac{\log_b N}{\log_b a}\)</div>
+                                                            <div>\(\LARGE \log_a B = \frac{1}{\log_B a}\)</div>
+                                                        </div>
+                                                        <h3>3. f(x) logarítmica</h3>
+                                                        <p class="texto">
+                                                            Chama-se função logarítmica a toda função definida por:
+                                                            <br>
+                                                            $$\LARGE f(x) = \log_a x$$
+                                                        </p>
+                                                        <img src="img/flog.gif" style="width:417px;height:197px;display: block;margin: 25px;margin-left: auto;margin-right: auto;"> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Função Modular -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-algebra" href="#algebra-mod">Função Modular</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="algebra-mod" class="panel-collapse collapse">
+                                                    <div class="panel-body"> 
+                                                        <h3>1. Definição</h3>
+                                                        <p class="texto">
+                                                            $$\LARGE |x| = \begin{cases} x, se \space x \geq 0 \\ -x, se \space x < 0 \end{cases}$$
+                                                            $$\LARGE |A| = B \Rightarrow A = B \space e \space A = -B$$           
+                                                        </p>
+                                                        <div class="formulas">
+                                                            <div>\(\LARGE |\sqrt{2} - \sqrt{7}| = -(\sqrt{2} - \sqrt{7})\)</div>
+                                                            <div>\(\LARGE |2x - 2| = x + 2 \Rightarrow 2x - 2 = x + 2 \space ou \space 2x - 2 = -(x + 2)\)</div>
+                                                            <div>\(\LARGE |2x - 2| = |x + 2| \Rightarrow 2x - 2 = x + 2 \space ou \space 2x - 2 = -(x + 2)\)</div>
+                                                            <div>\(\LARGE |x|^2 - 5|x| + 4 = 0 \Rightarrow \textrm{só trocar o |x| por y e calcular, depois coloca no módulo de novo e aplica a propriedade do } A = \pm B\)</div>
+                                                            <div>\(\LARGE |x + 1| + |x| = 3 \Rightarrow \textrm{só montar todas as possibilidades dessa soma de módulos, primeiro positivo e segundo negativo...}\)</div>
+                                                        </div>
+                                                        <h3>2. Inequação</h3>
+                                                        <p class="texto">
+                                                            $$\LARGE |A| > B \Rightarrow \textrm{A > B ou A < -B}$$
+                                                            $$\LARGE |A| < B \Rightarrow \textrm{-B < A < B}$$
+                                                        </p>
+                                                        <div class="formulas">
+                                                            <div>\(\LARGE |2x + 1| < 3 \Rightarrow -3 < 2x + 1 < 3 \Rightarrow -2 < x < 1\)</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                
+                                            <!-- Progressão Aritmética -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-algebra" href="#algebra-pa">Progressão Aritmética</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="algebra-pa" class="panel-collapse collapse">
+                                                    <div class="panel-body"> 
+                                                        <h3>1. Razão</h3>
+                                                        <p>\(\LARGE r = a_{n+1} - a_n\)</p>
+                                                        <h3>2. Termo geral de uma P.A.</h3>
+                                                        <p>\(\LARGE a_n = a_1 + (n - 1) \cdot r\)</p>
+                                                        <h3>3. Propriedade de 3 termos consecutivos de uma P.A.</h3>
+                                                        <p>\(\LARGE a_p = \frac{a_{p-1} + a_{p+1}}{2}\)</p>
+                                                        <h3>4. Propriedade de dois termos equidistantes dos extremos</h3>
+                                                        <p>\(\LARGE a_p + a_k = a_1 + a_n\)</p>
+                                                        <h3>5. Soma dos n primeiros termos</h3>
+                                                        <p>\(\LARGE S_n = \frac{(a_1 + a_n) \cdot n}{2}\)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                
+                                            <!-- Progressão Geométrica -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-algebra" href="#algebra-pg">Progressão Geométrica</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="algebra-pg" class="panel-collapse collapse">
+                                                    <div class="panel-body"> 
+                                                        <h3>1. Razão</h3>
+                                                        <p>\(\LARGE q = \frac{a_{n+1}}{a_n}\)</p>
+                                                        <h3>2. Termo geral de uma P.G.</h3>
+                                                        <p>\(\LARGE a_n = a_1 \cdot q^{n - 1}\)</p>
+                                                        <h3>3. Propriedade de 3 termos consecutivos de uma P.G.</h3>
+                                                        <p>\(\LARGE a_p^2 = a_{p-1} \cdot a_{p + 1}\)</p>
+                                                        <h3>4. Propriedade de dois termos equidistantes dos extremos</h3>
+                                                        <p>\(\LARGE a_p \cdot a_k = a_1 \cdot a_n\)</p>
+                                                        <h3>5. Produto dos n primeiros termos</h3>
+                                                        <p>\(\LARGE |P_n| = \sqrt{(a_1 \cdot a_n)^n}\)</p>
+                                                        <h3>6. Soma dos infinitos termos de uma P.G.</h3>
+                                                        <p>\(\LARGE - 1 < q < 1\)</p>
+                                                        <p>\(\LARGE S = \frac{a_1}{1 - q}\)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                
+                                            <!-- Matrizes -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-algebra" href="#algebra-matriz">Matrizes</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="algebra-matriz" class="panel-collapse collapse">
+                                                    <div class="panel-body"> 
+                                                        <p class="texto2">
+                                                            <b>\(A_{2x3}\)</b><br>
+                                                            \(A = \begin{bmatrix} 
+                                                            a_{11} & a_{12} & a_{13} \\
+                                                            a_{21} & a_{22} & a_{23} 
+                                                            \end{bmatrix}\)
+                                                        </p>
+                                                        <h3><b>Matriz nula</b></h3>
+                                                        <p>
+                                                            \(0_{2x3} = \begin{bmatrix} 
+                                                            0 & 0 & 0 \\
+                                                            0 & 0 & 0 
+                                                            \end{bmatrix}\)
+                                                        </p>
+                                                        <h3><b>Matriz identidade</b></h3>
+                                                        <p>
+                                                            \(I_{2} = \begin{bmatrix} 
+                                                            1 & 0 \\
+                                                            0 & 1
+                                                            \end{bmatrix}\)
+                                                            <br>
+                                                            \(I_{3} = \begin{bmatrix} 
+                                                            1 & 0 & 0 \\
+                                                            0 & 1 & 0 \\
+                                                            0 & 0 & 1
+                                                            \end{bmatrix}\)
+                                                        </p>
+                                                        <h3><b>Matriz oposta</b></h3>
+                                                        <p>
+                                                            \(A = \begin{bmatrix} 
+                                                            1 & 3 & 4 \\
+                                                            2 & 1 & -4 
+                                                            \end{bmatrix}
+                                                            \Rightarrow
+                                                            -A = \begin{bmatrix} 
+                                                            -1 & -3 & -4 \\
+                                                            -2 & -1 & 4 
+                                                            \end{bmatrix}
+                                                            \)
+                                                        </p>
+                                                        <h3><b>Matriz transposta</b></h3>
+                                                        <p>
+                                                            \(A = \begin{bmatrix} 
+                                                            1 & 3 & 7 \\
+                                                            2 & 4 & 6 
+                                                            \end{bmatrix}
+                                                            \Rightarrow
+                                                            A^{t} \begin{bmatrix} 
+                                                            1 & 2 \\
+                                                            3 & 4 \\
+                                                            7 & 6
+                                                            \end{bmatrix}
+                                                            \)
+                                                        </p>
+                                                        <h3><b>Adição, subtração e multiplicação por número real</b></h3>
+                                                        <p>
+                                                            \(A = \begin{bmatrix} 
+                                                            1 & 3 & 7 \\
+                                                            2 & 4 & 6 
+                                                            \end{bmatrix}
+                                                            \Rightarrow
+                                                            3 \cdot A = \begin{bmatrix} 
+                                                            3 & 9 & 21 \\
+                                                            6 & 12 & 18 
+                                                            \end{bmatrix}
+                                                            \Rightarrow
+                                                            3 \cdot A - A = \begin{bmatrix} 
+                                                            2 & 6 & 14 \\
+                                                            4 & 8 & 12 
+                                                            \end{bmatrix}
+                                                            \)
+                                                        </p>
+                                                        <h3><b>Multiplicação de 2 matrizes</b></h3>
+                                                        <p class="texto2">
+                                                            Sendo \(\LARGE A_{mxn} \cdot B_{pxq} \textrm{ n precisa obrigatoriamente ser igual a p, linhas = colunas}\)
+                                                            <br><b>Só aplicar linha x coluna!</b><br>
+                                                            \(\LARGE \begin{bmatrix} 
+                                                            2 & 3 & 1 \\
+                                                            0 & 1 & 2 
+                                                            \end{bmatrix}
+                                                            \cdot
+                                                            \begin{bmatrix} 
+                                                            2 & 0 \\
+                                                            1 & -1 \\
+                                                            3 & 5
+                                                            \end{bmatrix}
+                                                            =
+                                                            \begin{bmatrix} 
+                                                            10 & 2 \\
+                                                            7 & 9 \\
+                                                            \end{bmatrix}
+                                                            \)
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-mat" href="#trigonometria">Trigonometria</a>
+                                    </h4>
+                                </div>
+                                <div id="trigonometria" class="panel-collapse collapse">
+                                    <div class="panel-body">   
+                                        <!-- Abertura cascata Matemática-Trigonometria -->
+                                        <div class="panel-group" id="accordion-mat-trigo">
+                                            
+                                            <!-- Funções Trigonometricas -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-trigo" href="#trigonometria-func">Funções trigonométricas</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="trigonometria-func" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. sen, cos, tg</h3>
+                                                        <div class="formulas">
+                                                            <div>\(\LARGE sen = \frac{cateto \space oposto}{hipotenusa}\)</div>
+                                                            <div>\(\LARGE cos = \frac{cateto \space adjacente}{hipotenusa}\)</div>
+                                                            <div>\(\LARGE tg = \frac{cateto \space oposto}{cateto \space adjacente}\)</div>
+                                                        </div>
+                                                        <h3>2. Relações fundamentais e auxiliares</h3>
+                                                        <div class="formulas">
+                                                            <div>\(\LARGE sen^2x + cos^2x = 1\)</div>
+                                                            <div>\(\LARGE tg \space x = \frac{sen \space x}{cos \space x}\)</div>
+                                                            <div>\(\LARGE cotg \space x = \frac{1}{tg \space x} = \frac{cos \space x}{sen \space x}\)</div>
+                                                            <div>\(\LARGE sec \space x = \frac{1}{cos \space x}\)</div>
+                                                            <div>\(\LARGE cossec \space x = \frac{1}{sen \space x}\)</div>
+                                                            <h4>Relações Auxiliares:</h4>
+                                                            <div>\(\LARGE sec^2x = 1 + tg^2x\)</div>
+                                                            <div>\(\LARGE cossec^2x = 1 + cotg^2x\)</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Medidas de Arcos -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-trigo" href="#trigonometria-arcos">Medidas de Arcos</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="trigonometria-arcos" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. Definição</h3>
+                                                        <div class="formulas">
+                                                            <div>$$\LARGE \alpha = \frac{comprimento \space \widehat{AB}}{raio}$$</div>
+                                                            <img src="img/arco.jpg" style="width:233px;height:205px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                                            <div>$$\LARGE 180º \space ---- \space \pi \space rad \\ \LARGE graus \space ---- \space x \space rad$$</div>
+                                                        </div>
+                                                        <h3>2. Área do setor</h3>
+                                                        <p class="texto">Para calcular a área do setor basta realizar a seguinte regra de três:</p>
+                                                        <div>$$\LARGE 360º \space ---- \space \pi \cdot r^2 \\ \LARGE graus \space ----- \space x$$</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Estudo das Funções Trigonométricas -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-trigo" href="#trigonometria-esf">Estudo das Funções Trigonométricas</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="trigonometria-esf" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <img src="img/func_trigo1.jpg" style="width:1438px;height:957px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                                        <img src="img/func_trigo2.jpg" style="width:1180px;height:649px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                                        <img src="img/func_gif.gif" style="width:500px;height:300px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                                        <img src="img/func_gif2.gif" style="width:640px;height:278px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                                        <img src="img/func_gif3.gif" style="width:500px;height:553px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Arco: Soma, diferença, duplo e triplo -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-trigo" href="#trigonometria-arco">Arco: Soma, diferença, duplo e triplo</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="trigonometria-arco" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. Adição e subtração</h3>
+                                                        <p>\(\LARGE cos(a+b) = cos \space a \cdot cos \space b - sen \space a \cdot sen \space b\)</p>
+                                                        <p>\(\LARGE cos(a-b) = cos \space a \cdot cos \space b + sen \space a \cdot sen \space b\)</p>
+                                                        <p>\(\LARGE sen(a+b) = sen \space a \cdot cos \space b + sen \space b \cdot cos \space a\)</p>
+                                                        <p>\(\LARGE sen(a-b) = sen \space a \cdot cos \space b - sen \space b \cdot cos \space a\)</p>
+                                                        <p>\(\LARGE tg(a+b) = \frac{tg \space a + tg \space b}{1 - tg \space a \cdot tg \space b}\)</p>
+                                                        <p>\(\LARGE tg(a-b) = \frac{tg \space a - tg \space b}{1 + tg \space a \cdot tg \space b}\)</p>
+                                                        <h3>2. Arco Duplo</h3>
+                                                        <p>\(\LARGE cos(2a) = cos^2a - sen^2a\)</p>
+                                                        <p>\(\LARGE cos(2a) = 2 \cdot cos^2a - 1\)</p>
+                                                        <p>\(\LARGE cos(2a) = 1 - 2 \cdot sen^2a\)</p>
+                                                        <p>\(\LARGE sen(2a) = 2 \cdot sen \space a \cdot cos \space a\)</p>
+                                                        <p>\(\LARGE tg(2a) = \frac{2 \cdot tg \space a}{1 - tg^2a}\)</p>
+                                                        <h3>3. Arco Triplo</h3>
+                                                        <p>\(\LARGE cos(3a) = 4 - cos^3a - 3 \cdot cos \space a\)</p>
+                                                        <p>\(\LARGE sen(3a) = 3 \cdot sen \space a - 4 \cdot sen^3a\)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Lei dos senos e cossenos -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-trigo" href="#trigonometria-leicossen">Lei dos senos e cossenos</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="trigonometria-leicossen" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. Lei dos senos</h3>
+                                                        <p class="texto2"><b>2 ângulos e 1 lado</b></p>
+                                                        <p>\(\LARGE \frac{a}{sen \space A} = \frac{b}{sen \space B} = \frac{c}{sen \space C}\)</p>
+                                                        <h3>1. Lei dos cossenos</h3>
+                                                        <p class="texto2"><b>2 lados e 1 ângulo</b></p>
+                                                        <p>\(\LARGE a^2 = b^2 + c^2 - 2 \cdot b \cdot c \cdot cos \space A\)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Funções inversas: arcoseno, arcocosseno, arcotangente -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-trigo" href="#trigonometria-finvarco">Funções inversas: arcoseno, arcocosseno, arcotangente</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="trigonometria-finvarco" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. Definição</h3>
+                                                        <p>$$\LARGE x = arc \space sen(y)$$</p>
+                                                        <p>$$\LARGE sen \space 30º = \frac{1}{2} \Rightarrow arc \space sen(\frac{1}{2}) = 30º$$</p>                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-mat" href="#geoplana">Geometria Plana</a>
+                                    </h4>
+                                </div>
+                                <div id="geoplana" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <!-- Abertura cascata Matemática-Geometria Plana -->
+                                        <div class="panel-group" id="accordion-mat-geo">
+                                            
+                                            <!-- Polígonos -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-geo" href="#geo-poli">Polígonos</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="geo-poli" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. Nomenclatura</h3>
+                                                        <img src="img/poligonos.png" style="width:521px;height:552px;margin: 25px;">
+                                                        <div class="formulas">
+                                                            <h3>2. Número de diagonais</h3>
+                                                            <div>\(\LARGE d = \frac{n \cdot (n - 3)}{2}\)</div>
+                                                            <h3>3. Soma dos ângulos internos</h3>
+                                                            <div>\(\LARGE S_i = (n - 2) \cdot 180°\)</div>
+                                                            <h3>4. Somo das ângulos externos</h3>
+                                                            <div>\(\LARGE S_e = 360°\)</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Pontos notáveis dos triângulos -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-geo" href="#geo-pontosnotaveis">Pontos notáveis dos triângulos</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="geo-pontosnotaveis" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. Incentro</h3>
+                                                        <p class="texto2">Incentro é o ponto de intersecção das bissetrizes internas do triângulo</p>
+                                                        <img src="img/incentro.png" style="width:241px;height:139px;margin: 25px;">
+                                                        <h3>2. Circuncentro</h3>
+                                                        <p class="texto2">Circuncentro é o ponto de intersecção das mediatrizes dos lados do triângulo</p>
+                                                        <img src="img/circuncentro.gif" style="width:295px;height:293px;margin: 25px;">
+                                                        <h3>3. Baricentro</h3>
+                                                        <p class="texto2">Baricentro é o ponto de intersecção das medianas do triângulo e divide cada mediana na razão de 2 para 1</p>
+                                                        <img src="img/baricentro.png" style="width:278px;height:180px;margin: 25px;">
+                                                        <h3>4. Ortocentro</h3>
+                                                        <p class="texto2">Ortocentro é o ponto de intersecção das retas suportes das alturas do triângulo</p>
+                                                        <img src="img/ortocentro.png" style="width:209px;height:149px;margin: 25px;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Ângulo na circunferência -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-geo" href="#geo-angulonocirculo">Ângulo na circunferência</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="geo-angulonocirculo" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <img src="img/merda.jpeg" style="max-width:100%;max-height:100%;margin: 25px;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Potência de ponto -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-geo" href="#geo-potenciadeponto">Potência de ponto</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="geo-potenciadeponto" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <img src="img/merda3.jpeg" style="max-width:100%;max-height:100%;margin: 25px;">
+                                                        <img src="img/merda2.jpeg" style="max-width:100%;max-height:100%;margin: 25px;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Área de figuras -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-mat-geo" href="#geo-areadefiguras">Área de figuras</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="geo-areadefiguras" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <img src="img/areas.jpg" style="max-width:100%;max-height:100%;margin: 25px;"><br>
+                                                        <img src="img/setor.png" style="max-width:100%;max-height:100%;margin: 25px;">
+                                                        <p>$$\LARGE S = \frac{l \cdot R}{2}$$</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#fisica">Física</a>
+                    </h4>
+                </div>
+                <div id="fisica" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <!-- Abertura cascata Física -->
+                        <div class="panel-group" id="accordion-fis">
+                            
+                            <!-- Abertura cascata Cinemática -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-fis" href="#fis-cinematica">Cinemática</a>
+                                    </h4>
+                                </div>
+                                <div id="fis-cinematica" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="panel-group" id="accordion-fis-cinematica">
+                                            
+                                            <!-- Cinemática -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-fis-cinematica" href="#fis-cinematica-intro">Introdução</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="fis-cinematica-intro" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <div class="formulas">
+                                                            <h3>1. Movimento Uniforme (M.U.)</h3>
+                                                            <div>\(\LARGE V = \frac{\Delta S}{\Delta t}\)</div>
+                                                            <div>\(\LARGE S = S_0 + V \cdot t\)</div>
+                                                            <h3>2. Movimento Uniformemente Variado (M.U.V.)</h3>
+                                                            <div>\(\LARGE V = V_0 + a \cdot t\)</div>
+                                                            <div>\(\LARGE V^2 = V_0^2 + 2a \Delta S\)</div>
+                                                            <div>\(\LARGE S = S_0 + V_0 \cdot t + \frac{a \cdot t^2}{2}\)</div>
+                                                            <h3>3. Aceleração</h3>
+                                                            <div>\(\LARGE a = \frac{\Delta V}{\Delta t}\)</div>
+                                                            <h3>4. Derivando a função (E V A)</h3>
+                                                            <div>\(\LARGE 2t^3\)</div>
+                                                            <div>\(\LARGE 6t^2\)</div>
+                                                            <div>\(\LARGE 12t^1\)</div>
+                                                            <div>\(\LARGE 12t^0\)</div>
+                                                            <div>\(\LARGE 0\)</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Movimento Circular -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-fis-cinematica" href="#fis-cinematica-circular">Movimento Circular</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="fis-cinematica-circular" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. Ângulo</h3>
+                                                        <img src="img/mcu1.GIF" style="max-width:100%;max-height:100%;margin: 25px; margin-left: 0px">
+                                                        <div>\(\LARGE \theta = \frac{S}{R}\)</div>
+                                                        <h3>2. Período (T) e frequência (f)</h3>
+                                                        <p class="texto3">
+                                                            <b>T</b>: tempo gasto numa volta completa.<br>
+                                                            <b>f</b>: número de voltas (n) num certo intervalo de tempo (t)
+                                                        </p>
+                                                        <div>\(\LARGE f = \frac{n}{\Delta t}\)</div>
+                                                        <p class="texto3">Relações entre T e f:</p>
+                                                        <div>\(\LARGE T = \frac{1}{f} \space ou \space f = \frac{1}{T}\)</div>
+                                                        <h3>3. Velocidade angular média</h3>
+                                                        <div>\(\LARGE \omega_m = \frac{\Delta \theta}{\Delta t}\)</div>
+                                                        <h3>4. Aceleração angular média</h3>
+                                                        <div>\(\LARGE \gamma = \frac{\Delta \omega}{\Delta t}\)</div>
+                                                        <h3>5. Movimento circular uniforme (MCU)</h3>
+                                                        <div>\(\LARGE \omega = \frac{2 \pi}{T} \space ou \space \omega = 2 \pi \cdot f\)</div>
+                                                        <p class="texto3">Relação entre \(\LARGE \omega\) e o V</p>
+                                                        <div>\(\LARGE V = \frac{\Delta S}{\Delta t} = \frac{2 \pi \cdot R}{T} \Rightarrow V = \omega \cdot R\)</div>
+                                                        <p class="texto3">Função horária do espaço angular</p>
+                                                        <div>\(\LARGE \theta = \theta_0 + \omega \cdot t \)</div>
+                                                        <h3>6. Movimento uniformemente variado (MCUV)</h3>
+                                                        <p class="texto3">Aceleração angular e escalar</p>
+                                                        <div>\(\LARGE a = \frac{\Delta V}{\Delta t} = \frac{\Delta \omega \cdot R}{\Delta t} \Rightarrow \gamma = \frac{a}{R}\)</div>
+                                                        <p class="texto3">Equações do MCUV</p>
+                                                        <ul class="lista">
+                                                            <li><div>\(\LARGE \theta = \theta_0 + \omega_0 t + \frac{\gamma \cdot t^2}{2}\)</div></li>
+                                                            <li><div>\(\LARGE \omega = \omega_0 + \gamma t\)</div></li>
+                                                            <li><div>\(\LARGE \omega^2 = \omega_0^2 + 2\gamma \Delta \theta\)</div></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Lançamento de projéteis -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-fis-cinematica" href="#fis-cinematica-projeteis">Lançamento de projéteis</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="fis-cinematica-projeteis" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. Alcance</h3>
+                                                        <div>\(\LARGE D = \frac{V_0^2}{g} \cdot sen 2 \alpha\)</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Abertura cascata Termologia -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-fis" href="#fis-termologia">Termologia</a>
+                                    </h4>
+                                </div>
+                                <div id="fis-termologia" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="panel-group" id="accordion-fis-termologia">
+                                            
+                                            <!-- Termometria -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-fis-termologia" href="#fis-termologia-intro">Termometria</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="fis-termologia-intro" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. Relações</h3>
+                                                        <img src="img/escalas_termometricas.jpg" style="max-width:100%;max-height:100%;margin: 25px;">
+                                                        <h3>2. Fórmulas</h3>
+                                                        <div class="formulas">
+                                                            \(\LARGE \frac{C}{5} = \frac{F - 32}{9} \space e \space K = C + 273\)
+                                                        </div>
+                                                        <h3>2. Outras relações</h3>
+                                                        <p>
+                                                            \(\LARGE \frac{\Delta C}{100} = \frac{\Delta F}{180} \Rightarrow \frac{\Delta C}{5} = \frac{\Delta F}{9}\)
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Calorimetria -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-fis-termologia" href="#fis-termologia-calorimetria">Calorimetria</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="fis-termologia-calorimetria" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. Definições</h3>
+                                                        <p class="texto2">
+                                                            <b>Calor sensível</b>: calor utilizado para variação apenas da temperatura do corpo.<br>
+                                                            \(\LARGE Q = mct\)<br><br>
+                                                            <b>Calor latente</b>: calor utilizado para mudança de estado físico.<br>
+                                                            \(\LARGE Q = ml\)<br><br>
+                                                            <b>Capacidade térmica</b>: determina a quantidade de calor de que esse corpo necessita para veriar sua temperatura de uma unidade.<br>
+                                                            \(\LARGE Q = mc\)<br><br>
+                                                            <b>Balanço energético</b>: trocam energia até atingir equilíbrio térmico.<br>
+                                                            \(\LARGE \sum Q_{trocado} = 0\)<br>
+                                                            \(\LARGE Q_1 + Q_2 + Q_3 = 0\)
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Transmissão de calor -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-fis-termologia" href="#fis-termologia-transcalor">Transmissão de calor</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="fis-termologia-transcalor" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. Tipos</h3>
+                                                        <p class="texto2">
+                                                            <b>Condução</b>: é o processo de transmissão de calor em que a energia térmica passa de um local para o outro através das partículas do meio que os separa, não podendo acontecer no vácuo.<br>
+                                                            <b>Convecção</b>: constitui-se do movimento de massas fluidas.<br>
+                                                            <b>Radiação</b>: é o processo de transmissão de calor por meio de ondas eletromagnéticas.<br>
+                                                            <img src="img/conducao.jpg" style="max-width:100%;max-height:100%;margin: 25px;">
+                                                        </p>
+                                                        <h3>2. Fluxo de calor (Lei de Fourier)</h3>
+                                                        <p>\(\LARGE \phi = \frac{C \cdot S \cdot \Delta T}{L}\)</p>
+                                                        <img src="img/lei_de_fourier.jpg" style="max-width:100%;max-height:100%;margin: 25px;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Gases Perfeitos -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-fis-termologia" href="#fis-termologia-gasesperfeitos">Gases Perfeitos</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="fis-termologia-gasesperfeitos" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. Equação de Clapeyron</h3>
+                                                        <p>\(\LARGE p \cdot v = n \cdot R \cdot T\)</p>
+                                                        <h3>2. Equação geral dos gases perfeitos</h3>
+                                                        <p>\(\LARGE \frac{p_i V_i}{T_i} = \frac{p_o V_o}{T_o}\)</p>
+                                                        <h3>3. Transformações de um gás</h3>
+                                                        <p class="texto2">
+                                                            <b>Isotérmica</b>: são as que acontecem com a temperatura constante.<br>
+                                                            <b>Isobáricas (ou Isopiézicas)</b>: são as que acontecem com a pressão constante.<br>
+                                                            <b>Isométricas (ou Isocóricas)</b>: são as que acontecem com o volume constante.<br>
+                                                            <b>Adiabática</b>: são as que ocorrem sem troca de calor com o meio externo<br>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Termodinâmica -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-fis-termologia" href="#fis-termologia-termodinamica">Termodinâmica</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="fis-termologia-termodinamica" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. O que é</h3>
+                                                        <p class="texto2"><b>Termodinâmica</b> é a ciência que estuda a relação entre a energia térmica em trânsito (calor) e a energia mecânica em trânsito (trabalho) trocadas por um sistema com o meio externo e a relação entre essas trocas e as propriedades do sistema.</p>
+                                                        <h3>2. Transformações</h3>
+                                                        <p class="texto2">
+                                                            \(\LARGE \textrm{Volume aumenta} \Leftrightarrow \textrm{sistema realiza trabalho } (\tau > 0)\)<br>
+                                                            \(\LARGE \textrm{Volume diminui} \Leftrightarrow \textrm{sistema recebe trabalho } (\tau < 0)\)<br>
+                                                            \(\LARGE \textrm{Volume constante} \Leftrightarrow \textrm{sistema não troca trabalho } (\tau = 0)\)
+                                                        </p>
+                                                        <h3>3. Trabalho de um sistema num ciclo (fechado)</h3>
+                                                        <img src="img/ciclo.jpg" style="max-width:100%;max-height:100%;margin: 25px;">
+                                                        <p class="texto2">
+                                                            <b>O trabalho é dado pela área interna do sistema!</b><br>
+                                                            Sentido horário - sistema realiza trabalho (T > 0)<br>
+                                                            Sentido anti-horário - sistema recebe trabalho (T < 0)
+                                                        </p>
+                                                        <h3>4. Energia Interna</h3>
+                                                        <p class="texto2">
+                                                            \(\LARGE U = \frac{3}{2} \cdot n \cdot R \cdot T = \frac{3}{2} \cdot p \cdot v\)<br>
+                                                            <b>A energia interna é diretamente proporcional à temperatura absoluta do gás!</b>
+                                                        </p>
+                                                        <h3>5. Primeira Lei da Termodinâmica</h3>
+                                                        <p class="texto2">
+                                                            <b>Princípio da conservação de energia!</b><br>
+                                                            \(\LARGE Q = \tau + \Delta U\)
+                                                        </p>
+                                                        <h3>6. Máquina térmica</h3>
+                                                        <p class="texto2">
+                                                            \(\LARGE Rendimento \Rightarrow \eta = 1 - \frac{T_2}{T_1}\)<br>
+                                                            \(\LARGE Rendimento \Rightarrow \eta = 1 - \frac{Q_2}{Q_1}\)<br>
+                                                            <img src="img/maquina_termica.jpg" style="max-width:100%;max-height:100%;margin: 25px;"><br>
+                                                        </p>
+                                                        <h3>7. Segunda Lei da Termodinâmica</h3>
+                                                        <p class="texto2">
+                                                            <b>Segunda Lei da Termodiâmica</b>: nenhuma máquina térmica, funcionando em ciclos, pode transformar toda a energia térmica (calor) recebida da fonte quente em energia mecânica (trabalho).<br>
+                                                            <b>Ciclo de Carnot</b>: é o ciclo com maior rendimento possível, só teria rendimento 100% se a fonte fria estivesse no zero absoluto<br>
+                                                            <img src="img/carnot.jpg" style="max-width:100%;max-height:100%;margin: 25px;"><br>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Abertura cascata Eletrodinâmica -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-fis" href="#fis-eletrodinamica">Eletrodinâmica</a>
+                                    </h4>
+                                </div>
+                                <div id="fis-eletrodinamica" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="panel-group" id="accordion-fis-eletrodinamica">
+                                            
+                                            <!-- Corrente e tensão elétrica -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-fis-eletrodinamica" href="#fis-termologia-correntetensao">Corrente e tensão elétrica</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="fis-termologia-correntetensao" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <p class="texto2">
+                                                            <b>Tensão</b>: U, voltagem<br>
+                                                            <b>Intensidade</b>: i<br>
+                                                            <b>e</b>: \(\LARGE 1,6 \cdot 10^{-19}\)<br>
+                                                            \(\LARGE Q = n \cdot e\)<br>
+                                                            \(\LARGE Q = i \cdot \Delta t\)<br>
+                                                            \(\LARGE 1V = \frac{1J}{1C}\)<br>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Resistores -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-fis-eletrodinamica" href="#fis-termologia-resistores">Resistores</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="fis-termologia-resistores" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <p class="texto2">
+                                                            <b>Efeito Joule</b>: quando um resistor é percorrido por corrente elétrica, ocorre a transformação de energia elétrica em energia térmica, devido ao choque dos elétrons livres com os átomos do condutor.
+                                                        </p>
+                                                        <h3>1. Primeira Lei de Ohm</h3>
+                                                        <p>\(\LARGE U = r \cdot i\)</p>
+                                                        <h3>2. Segunda lei de Ohm</h3>
+                                                        <p>\(\LARGE R = p \cdot \frac{l}{A}\)</p>
+                                                        <h3>3. Associação de resistores em sér<b>i</b>e</h3>
+                                                        <p class="texto2">
+                                                            \(\LARGE U = U_1 + U_2 + U_3\)<br>
+                                                            \(\LARGE R = R_1 + R_2 + R_3\)<br>
+                                                            Com i igual para o circuito inteiro
+                                                        </p>
+                                                        <h3>4. Associação de resistores em paralel<b>u</b></h3>
+                                                        <p class="texto2">
+                                                            \(\LARGE I = I_1 + I_2 + I_3\)<br>
+                                                            \(\LARGE \frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}\)<br>
+                                                            Com U igual para o circuito inteiro<br>
+                                                            \(\LARGE R = \frac{R_1 \cdot R_2}{R_1 + R_2}\)
+                                                        </p>
+                                                        <h3>5. Gerador Real</h3>
+                                                        <p>\(\LARGE U = E - r \cdot i\)</p>
+                                                        <p>\(\LARGE \textrm{Lei de Pouillet } i = \frac{E}{r + R}\)</p>
+                                                        <h3>6. Associação de geradores em série</h3>
+                                                        <p class="texto2">
+                                                            \(\LARGE U = U_1 + U_2 + U_3\)<br>
+                                                            \(\LARGE E = E_1 + E_2 + E_3\)<br>
+                                                            \(\LARGE r = r_1 + r_2 + r_3\)<br>
+                                                        </p>
+                                                        <h3>7. Associação de geradores em paralelo</h3>
+                                                        <p class="texto2">
+                                                            \(\LARGE I = i_1 + i_2 + i_3\)<br>
+                                                            \(\LARGE E = E\)<br>
+                                                            \(\LARGE r_p = \frac{r}{n}\)<br>
+                                                            \(\LARGE r_p = \frac{r_1 + r_2}{2}\)<br>
+                                                        </p>
+                                                        <h3>8. Circuito gerador-receptor</h3>
+                                                        <p>\(\LARGE i = \frac{\sum E - \sum E'}{\sum r + \sum r' + \sum R}\)</p>
+                                                        <h3>9. Potência</h3>
+                                                        <p>\(\LARGE \textrm{Potência total } P = U \cdot i\)</p>
+                                                        <p>\(\LARGE \textrm{Potência dissipada } P = R \cdot i^2\)</p>
+                                                        <p>\(\LARGE P = \frac{E}{\Delta t}\)</p>
+                                                        <p>\(\LARGE 1W = 1 \frac{J}{s}\)</p>
+                                                        <p>\(\LARGE P = \frac{U^2}{R}\)</p>
+                                                        <h3>10. Método da ponte de Wheatstone</h3>
+                                                        <p>\(\LARGE R_1 \cdot R_3 = R_2 \cdot R_4\)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Abertura cascata Dinâmica -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-fis" href="#fis-dinamica">Dinâmica</a>
+                                    </h4>
+                                </div>
+                                <div id="fis-dinamica" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="panel-group" id="accordion-fis-termologia">
+                                            
+                                           <!-- Conceitos -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-fis-dinamica" href="#fis-dinamica-intro">Conceitos</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="fis-dinamica-intro" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. Tipos de forças</h3>
+                                                        <ul class="lista">
+                                                            <li>Força peso: \(\LARGE P = m \cdot g\)</li>
+                                                            <li>Força normal: reação ao contato, sendo perpendicular à superficie\)</li>
+                                                            <li>Força tração: força com tração, cordas...\)</li>
+                                                            <li>Força elástica: molas\)</li>
+                                                        </ul>
+                                                        <h3>2. Leis de Newton</h3>
+                                                        <ul class="lista">
+                                                            <li>Primeira Lei: Inércia</li>
+                                                            <li>Segunda Lei: \(\LARGE F_r = m \cdot a\)</li>
+                                                            <li>Terceira Lei: Ação e reação</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            
+                                            <!-- Força Elástica -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-fis-dinamica" href="#fis-dinamica-elastica">Força Elástica</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="fis-dinamica-elastica" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. Lei de Hooke</h3>
+                                                        <div>\(\LARGE F = k \cdot x \textrm{ onde } x = L - L_0\)</div>
+                                                        <h3>2. Associação de molas em série</h3>
+                                                        <div>\(\LARGE X_{eq} = x_1 + x_2\)</div>
+                                                        <div>\(\LARGE \frac{1}{K_{eq}} = \frac{1}{K_1} + \frac{1}{K_2}\)</div>
+                                                        <h3>3. Associação de molas em paralelo</h3>
+                                                        <div>\(\LARGE K_{eq} = K_1 + K_2\)</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Polias e Roldanas -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-fis-dinamica" href="#fis-dinamica-polias">Polias e Roldanas</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="fis-dinamica-polias" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. Roldana Fixa</h3>
+                                                        <p class="texto2">\(\LARGE F = P\)</p>
+                                                        <img src="img/roldanafixa.png" style="width:260px;height:291px;margin: 25px;">
+                                                        <h3>2. Roldana Móvel</h3>
+                                                        <p class="texto2">\(\LARGE 2T_2 = T_1\)</p>
+                                                        <p class="texto2">\(\LARGE T_1 = P\)</p>
+                                                        <p class="texto2">\(\LARGE F = T_2 = \frac{T_1}{2}\)</p>
+                                                        <img src="img/roldanamovel.webp" style="width:335px;height:214px;margin: 25px;">
+                                                        <h3>3. Talha Exponencial</h3>
+                                                        <p class="texto2">\(\LARGE F = \frac{P}{2^n}\)</p>
+                                                        <img src="img/talhaexponencial.png" style="width:269px;height:160px;margin: 25px;">
+                                                        <h3>4. Moitão</h3>
+                                                        <p class="texto2">\(\LARGE 4F = P\)</p>
+                                                        <img src="img/moitao.gif" style="width:361px;height:340px;margin: 25px;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#portugues">Português</a>
+                    </h4>
+                </div>
+                <div id="portugues" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Teste
+                    </div>
+                </div>
+            </div>
+            
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#literatura">Literatura</a>
+                    </h4>
+                </div>
+                <div id="literatura" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <!-- Abertura cascata de Literatura -->
+                        <div class="panel-group" id="accordion-literatura">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-literatura" href="#litescolas">Escolas Literárias</a>
+                                    </h4>
+                                </div>
+                                <div id="litescolas" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <!-- Abertura cascata de Literatura Escolas Literárias -->
+                                        <div class="panel-group" id="accordion-literatura-escolas">
+                                            
+                                            <!-- Quinhetismo -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-literatura-escolas" href="#litescolas-quinhetismo">Quinhetismo</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="litescolas-quinhetismo" class="panel-collapse collapse">
+                                                    <div class="panel-body"> 
+                                                        <h3 class="titulo">Quinhetismo (1500 - 1601)</h3>
+                                                        <p class="texto">
+                                                        O Quinhentismo representa a primeira manifestação literária no Brasil que também ficou conhecida como "literatura de informação".
+                                                        É um período literário que reúne relatos de viagem com características informativas e descritivas. São textos que descrevem as terras descobertas pelos portugueses no século XVI, desde a fauna, a flora e o povo.
+                                                        Vale lembrar que o Quinhentismo brasileiro ocorreu paralelo ao Classicismo português e o nome do período refere-se a data de início: 1500.
+                                                        </p>
+                                                        <h4><b>Quinhentismo no Brasil</b></h4>
+                                                        <p class="texto">
+                                                        Com a chegada dos portugueses em território brasileiro em 1500, as terras encontradas foram relatadas pelos escrivães que acompanhavam os navios.
+                                                        Assim, a literatura de informação foi produzida pelos viajantes no início do século XVI, no período do Descobrimento do Brasil e das Grandes navegações.
+                                                        Além disso, os jesuítas, responsáveis por catequizarem os índios, criaram uma nova categoria de textos que fizeram parte do quinhentismo: a "literatura de catequese".
+                                                        Os principais cronistas desse período são: Pero Vaz de Caminha, Pero Magalhães Gândavo, Padre manuel da Nóbrega e Padre José de Anchieta.
+                                                        </p>
+                                                        <h4><b>Características do Quinhentismo</b></h4>
+                                                        <ul class="lista">
+                                                            <li>Crônicas de viagens</li>
+                                                            <li>Textos descritivos e informativos</li>
+                                                            <li>Conquista material e espiritual</li>
+                                                            <li>Linguagem simples</li>
+                                                            <li>Utilização de adjetivos</li>
+                                                        </ul>
+                                                        <h3 class="titulo">Autores e Obras</h3>
+                                                        <h4><b>Pero Vaz de Caminha (1450-1500)</b></h4>
+                                                        <p class="texto">
+                                                            Escrivão-mor da esquadra liderada por Pedro Álvares Cabral (1468-1520), Pero Vaz de Caminha, escritor e vereador português, registrou suas primeiras impressões acerca das terras brasileiras. Fez isso por meio da "Carta de Achamento do Brasil" datada de 1.º de maio de 1500.
+                                                        </p>
+                                                        <p class="texto">
+                                                            A Carta de Pero Vaz de Caminha, escrita para o Rei de Portugal, D. Manuel, é considerada o marco inicial da Literatura Brasileira, visto ser o primeiro documento escrito sobre a história do Brasil.
+                                                            Seu conteúdo aborda os primeiros contatos dos lusitanos com os indígenas brasileiros, bem como as informações e impressões sobre a descoberta das novas terras.
+                                                        </p>
+                                                        <h4><b>José de Anchieta (1534-1597)</b></h4>
+                                                        <p class="texto">
+                                                            José de Anchieta foi historiador, gramático, poeta, teatrólogo e um padre jesuíta espanhol. No Brasil, ele teve a função de catequizar os índios sendo um defensor desse povo contra os abusos dos colonizadores portugueses.
+                                                            Dessa maneira, ele aprendeu a língua tupi e desenvolveu a primeira gramática da língua indígena, chamada de "Língua Geral".
+                                                        </p>
+                                                        <p class="texto">
+                                                            Suas principais obras são "Arte de gramática da língua mais usada na costa do Brasil" (1595) e "Poema à virgem".
+                                                            A obra do Padre José de Anchieta só foi totalmente publicada no Brasil na segunda metade do século XX.
+                                                        </p>
+                                                        <h4><b>Pero de Magalhães Gândavo (1540-1580)</b></h4>
+                                                        <p class="texto">
+                                                            Pero de Magalhães foi gramático, professor, historiador e cronista português. Ficou conhecido pelos relatos que fez sobre a fauna, a flora e a dimensão das terras brasileiras em seu livro "História da província de Santa Cruz a que vulgarmente chamamos de Brasil".
+                                                        </p>
+                                                        <p class="texto">
+                                                            Além dos animais distintos e das plantas exóticas, ele descreve sobre os povos indígenas e a descoberta do Brasil por Pedro Álvares Cabral. Outra obra que merece destaque é "O Tratado da Terra do Brasil" (1576).
+                                                        </p>
+                                                        <h4><b>Manuel da Nóbrega (1517-1570)</b></h4>
+                                                        <p class="texto">
+                                                            Padre Manuel da Nóbrega foi um jesuíta português e chefe da primeira missão jesuítica à América: Armada de Tomé de Sousa (1549). Participou da primeira missa realizada no Brasil e da fundação das cidades de Salvador e Rio de Janeiro.
+                                                        </p>
+                                                        <p class="texto">
+                                                            Seu trabalho no Brasil foi de catequizar os índios e suas obras que merecem destaque são:
+                                                        </p>
+                                                        <ul class="lista">
+                                                            <li>"Informação da Terra do Brasil" (1549)</li>
+                                                            <li>"Diálogo sobre a conversão do gentio" (1557)</li>
+                                                            <li>"Tratado contra a Antropofagia" (1559)</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Barroco no Brasil -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-literatura-escolas" href="#litescolas-barroco">Barroco no Brasil</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="litescolas-barroco" class="panel-collapse collapse">
+                                                    <div class="panel-body"> 
+                                                        <h3 class="titulo">Barroco no Brasil (1601 - 1768)</h3>
+                                                        <p class="texto">
+                                                            O Barroco no Brasil tem início no final do século XVII. No país, essa tendência artística teve grande destaque na arquitetura, escultura, pintura e literatura.
+                                                            Na literatura, o marco inicial do barroco é a publicação da obra “Prosopopeia” (1601) de Bento Teixeira. Na escultura e arquitetura, Aleijadinho foi sem dúvida um dos maiores artistas barrocos brasileiros.
+                                                        </p>
+                                                        <h4><b>Contexto Histórico</b></h4>
+                                                        <p class="texto">
+                                                            Influenciado pelo barroco português, no Brasil este estilo se desenvolveu durante o período colonial no chamado “Século de Ouro”.
+                                                            Foi durante o ciclo do ouro que a exploração desse minério foi a principal atividade econômica desenvolvida no país. Minas Gerais foi o grande foco onde muitas jazidas foram encontradas.
+                                                        </p>
+                                                        <p class="texto">
+                                                            Nessa época, a primeira capital do Brasil, Salvador, foi transferida para o Rio de Janeiro.
+                                                            Diante disso, o número de habitantes no Brasil aumentou consideravelmente o que propiciou uma época de forte desenvolvimento econômico no país. No barroco mineiro, merece destaque o escultor e arquiteto brasileiro: Aleijadinho.
+                                                        </p>
+                                                        <h4><b>Características do Barroco</b></h4>
+                                                        <ul class="lista">
+                                                            <li>Linguagem dramática</li>
+                                                            <li>Racionalismo</li>
+                                                            <li>Exagero e rebuscamento</li>
+                                                            <li>Uso de figuras de linguagem</li>
+                                                            <li>União do religioso e do profano</li>
+                                                            <li>Arte dualista</li>
+                                                            <li>Jogo de contrastes</li>
+                                                            <li>Valorização dos detalhes</li>
+                                                            <li>Cultismo (jogo de palavras)</li>
+                                                            <li>Conceptismo (jogo de ideias)</li>
+                                                        </ul>
+                                                        <h4><b>Principais Autores e Obras</b></h4>
+                                                        <ul class="lista">
+                                                            <li><b>Bento Teixeira (1561-1618)</b>: autor de “Prosopopeia” (1601), poema épico com 94 estrofes que exalta a obra de Jorge de Albuquerque Coelho, terceiro donatário da capitania de Pernambuco.</li>
+                                                            <li><b>Gregório de Matos (1633-1696)</b>: um dos maiores representantes da literatura barroco no Brasil, que se destacou com sua poesia lírica, religiosa, erótica e satírica. É conhecido como “Boca do Inferno”, uma vez que sua poesia ironizava diversos aspectos da sociedade.</li>
+                                                            <li><b>Manuel Botelho de Oliveira (1636-1711)</b>: foi o primeiro brasileiro a publicar versos no estilo barroco. De sua obra destaca-se: “Música do Parnaso” (1705).</li>
+                                                            <li><b>Frei Vicente de Salvador (1564-1636)</b>: historiógrafo e o primeiro prosador do país. De sua obra destacam-se: “História do Brasil” e “História da Custódia do Brasil”.</li>
+                                                            <li><b>Frei Manuel da Santa Maria de Itaparica (1704-1768)</b>: autor de “Eustáquios” e “Descrição da Ilha de Itaparica”.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Arcadismo no Brasil -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-literatura-escolas" href="#litescolas-arcadismo">Arcadismo</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="litescolas-arcadismo" class="panel-collapse collapse">
+                                                    <div class="panel-body"> 
+                                                        <h3 class="titulo">Arcadismo (1768 - 1808)</h3>
+                                                        <p class="texto">
+                                                            No Brasil, o Arcadismo teve como marco inicial a publicação de “Obras Poéticas”, de Cláudio Manuel da Costa em 1768 e, ademais, a fundação da “Arcádia Ultramarina”, em Vila Rica.
+                                                            Vale lembrar que o nome dessa escola literária provém das Arcádias, ou seja, das sociedades literárias da época.
+                                                            Os principais escritores brasileiros desse período são: Cláudio Manuel da Costa, Santa Rita Durão, Basílio da Gama e Tomás Antônio Gonzaga.
+                                                        </p>
+                                                        <h4><b>Características do Arcadismo</b></h4>
+                                                        <ul class="lista">
+                                                            <li>Exaltação da natureza</li>
+                                                            <li>Valorização do cotidiano e da vida simples, pastoril e no campo (bucolismo)</li>
+                                                            <li>Crítica a vida nos centros urbanos</li>
+                                                            <li>Modelo clássico</li>
+                                                            <li>Linguagem simples</li>
+                                                            <li>Utilização de pseudônimos</li>
+                                                            <li>Objetividade</li>
+                                                            <li>Temas simples: amor, vida, casamento, paisagem</li>
+                                                            <li>Fugere Urbem (fugir da cidade)</li>
+                                                            <li>Inutilia Truncat (cortar o inútil)</li>
+                                                            <li>Aurea Mediocritas (mediocridade áurea/vida comum)</li>
+                                                            <li>Locus Amoenus (refúgio ameno/agradável)</li>
+                                                        </ul>
+                                                        <h3 class="titulo">Autores Brasileiros do Arcadismo</h3>
+                                                        <h4><b>Cláudio Manuel da Costa (1729-1789)</b></h4>
+                                                        <p class="texto">
+                                                            Poeta, advogado e jurista brasileiro, Cláudio Manuel da Costa é considerado o precursor do Arcadismo no Brasil e destacou -se por sua obra literária, mais precisamente, a poesia.
+                                                            O poeta mineiro em seus textos, aborda elementos locais, descrevendo paisagens, temática pastoril e expressando um forte sentimento nacionalista.
+                                                        </p>
+                                                        <p class="texto">
+                                                            Acusado de participar da Inconfidência Mineira junto com Tiradentes, foi preso em 1789 e suicidou-se na cadeia. Suas obras que merecem destaque: Obras Poéticas (1768) e Villa Rica (1773).
+                                                        </p>
+                                                        <h4><b>José de Santa Rita Durão (1722-1784)</b></h4>
+                                                        <p class="texto">
+                                                            Autor do poema épico Caramuru (1781), Freire Santa Rita Durão foi poeta e orador, considerado um dos precursores do indianismo no Brasil.
+                                                            Influenciado por Camões, o poema Caramuru, com subtítulo “Poema épico do Descobrimento da Bahia”, é baseado no modelo da epopeia tradicional: proposição, invocação, dedicatória, narração e epílogo. É composto de dez cantos e versos decassílabos em oitava rima.
+                                                        </p>
+                                                        <p class="texto">
+                                                            O texto conta a história de um português, o Caramuru, que após ter naufragado em terras brasileiras, começa a viver com os índios Tupinambás.
+                                                            Suas principais obras: Pro anmia studiorum instauratione oratio (1778) e Caramuru (1781).
+                                                        </p>
+                                                        <h4><b>José Basílio da Gama (1741-1795)</b></h4>
+                                                        <p class="texto">
+                                                            Poeta mineiro e autor do poema épico O Uraguai (1769), Basílio da Gama, nesse texto, aborda as disputas entre os europeus, os jesuítas e os índios sendo considerado um marco no literatura brasileira.
+                                                            Diferente do poema épico clássico, O Uraguai é composto de cinco cantos, com ausência de rima (rima branca) e estrofação.
+                                                        </p>
+                                                        <p class="texto">
+                                                            Participou da Arcádia Romana na Itália e foi preso em Portugal em 1768, acusado de manter relações de amizades com os jesuítas.
+                                                            Suas Principais obras são: O Uraguai (1769), Epitalâmio às Núpcias da Senhora Dona Maria Amália (1769), A Declamação Trágica (1772) e Quitúbia (1791).
+                                                        </p>
+                                                        <h4><b>Tomás Antônio Gonzaga (1744-1810)</b></h4>
+                                                        <p class="texto">
+                                                            Jurista, Político e Poeta luso-brasileiro, Tomás Antônio Gonzaga é um dos grandes poetas árcades de pseudônimo Dirceu.
+                                                            A obra que merece destaque é Marília de Dirceu (1792) carregada de lirismo e baseada no seu romance com a brasileira Maria Doroteia Joaquina de Seixas.
+                                                            Com fortes impulsos afetivos, Dirceu declara-se para sua pastora idealizada: Marília. Suas principais obras: Marília de Dirceu e Cartas Chilenas (1863).
+                                                        </p>
+                                                        <h3><b>Curiosidades</b></h3>
+                                                        <ul class="lista">
+                                                            <li>Os autores árcades portugueses que merecem destaque são: Manuel Maria Barbosa du Bocage, António Dinis da Cruz e Silva, Correia Garção, Marquesa de Alorna e Francisco José Freire.</li>
+                                                            <li>Outros escritores brasileiros que merecem destaque são: Inácio José de Alvarenga Peixoto (1744-1793) e Silva Alvarenga (1749-1814).</li>
+                                                            <li>Apesar de ser um poeta nascido em Portugal, a cidade de Marília, no Paraná recebe esse nome em homenagem ao escritor Tomás Antônio Gonzaga.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#geografia">Geografia</a>
+                    </h4>
+                </div>
+                <div id="geografia" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Teste
+                    </div>
+                </div>
+            </div>
+            
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#historia">História</a>
+                    </h4>
+                </div>
+                <div id="historia" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Teste
+                    </div>
+                </div>
+            </div>
+            
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#quimica">Química</a>
+                    </h4>
+                </div>
+                <div id="quimica" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Teste
+                    </div>
+                </div>
+            </div>
+            
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#gayologia">Biologia</a>
+                    </h4>
+                </div>
+                <div id="gayologia" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <!-- Abertura cascata de Biologia -->
+                        <div class="panel-group" id="accordion-bio">
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-bio" href="#cito-gen">Citologia e Génetica</a>
+                                    </h4>
+                                </div>
+                                <div id="cito-gen" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        
+                                        <!-- Abertura cascata Biologia-Cito -->
+                                        <div class="panel-group" id="accordion-bio-cito">
+                                            
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-bio-cito" href="#bio-cito01">A Organização Estrutural dos Seres Vivos</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="bio-cito01" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <h3>1. O descobrimento da célula</h3>
+                                                        <p class="texto">A descoberta da célula aconteceu após o descobrimento do microscópio por Hans e Zacarias Janssen (1590). Robert Hooke, 1665, apresentou à Real Sociedade de Londres resultados de suas pesquisas sobre a estrutura da cortiça observada ao microscópio em finos cortes. O material apresentava-se formado por pequenos compartimentos hexagonais delimitados por paredes espessas, lembrando, o conjunto, os favos de mel das abelhas.</p>
+                                                        <p class="texto">Cada compartimento foi chamado de célula (pequena cavidade). Sabe-se hoje que o tecido observado por Hooke (súber) está formado por células mortas, em cujas paredes houve decomposição de suberina, tornando-as impermeáveis e impedindo as trocas de substâncias (entrada de alimento e oxigênio, saída de detritos etc.) Após a suberificação e morte do tecido, restam as paredes espessas, delimitando espaços cheios de ar.</p>
+                                                        <img src="img/bio-cito01.png" style="width:300px;height:400px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                                        <h3>2. Estrutura de uma célula eucariótica animal</h3>
+                                                        <img src="img/celula_animal.jpg" style="width:692px;height:500px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                                        <h3><font color="blue">Membrana Plasmática: </font>a membrana plasmática, membrana celular ou plasmalema é um <b>envoltório fino</b>, poroso e microscópico que reveste as células dos seres procariontes e eucariontes. É uma estrutura semipermeável, responsável pelo transporte e seleção de substâncias que entram e saem da célula. Tendo com funções a permeabilidade seletiva (controle da entra e saída de substâncias), proteção das estruturas celulares, delimitação do intra e extracelular, transporte de substâncias essenciais ao metabolismo celular e reconhecimento (glicocalix).</h3>
+                                                        
+                                                        <h3><font color="blue">Citoplasma: </font>é o constituinte mais abundante, formado pelo citosol e os organoides celulares. O citosol, principal componente do citoplasma, é um <b>líquido no qual estão mergulhados os organoides celulares</b>.</h3>
+                                                        
+                                                        <h3><font color="blue">Ribossomos: </font> os ribossomos são pequenos grânulos que aparecem livremento no cetoplasma ou aderidos às membranas do retículo endoplasmático. Tendo como como função a <b>síntese de proteinas</b>.</h3>
+                                                        
+                                                        <h3><font color="blue">Retículo endoplasmático: </font>trata-se de uma estrutura que auxilia a <b>distribuição e o armazenamento de substâncias celulares</b>. Existindo dois tipos: granulas e liso. O granular ou rugoso apresenta ribossomos aderidos às suas membranas, o que não acontece com o liso.</h3>
+                                                        
+                                                        <h3><font color="blue">Mitocôndria: </font> ocorrem as etapas de <b>respiração celular</b>, processo que fornece a energia necessária às atividades da célula.</h3>
+                                                        
+                                                        <h3><font color="blue">Complexo Golgiense: </font> organoide contituido por uma pilha de vesículas circulares e achatadas, servindo principalmente para <b>armazenamento de secreções, substâncias úteis produzidas e eliminadas pela célula.</b></h3>
+                                                        
+                                                        <h3><font color="blue">Lisossomo: </font>são pequenas bolsas formadas por uma membrana que envolve <b>enzimas</b>, elementos responsáveis pela digestão de substâncias no meio intracelular.</h3>
+                                                        
+                                                        <h3><font color="blue">Centrossomo: </font> organoide situado no centro da célula e contituído por dois centríolos, pequenos cilíndros perpendiculares entre si, que exercem importantes <b>funções no processo de divisão celular</b>.</h3>
+                                                        
+                                                        <h3><font color="blue">Citoesqueleto: </font>a forma celular é mantida pelo citoesqueleto, um conjunto de filamentos de natureza proteica, existente no citoplasma.</h3>
+                                                        
+                                                        <h3><font color="blue">Núcleo: </font> situado geralmento no centro da célula, o núcleo é envolvido por uma dupla e porosa membrana e apresenta no seu interior o nucléolo e a cromatina. O nucléolo é um corpúsculo que origina os ribossomos. <b>Estruturalmente, a cromatina é formada pelo DNA, onde aparecem os genes, por meio dos quais o núcleo coordena as funções celulares</b>.</h3>
+                                                        <h3>3. Estrutura de uma célula bacteriana</h3>
+                                                        <p class="texto">No centro da célula, destaca-se o nucleoide, constituído por uma única e enovelada molécula de DNA, que representa o material genético da célula.</p>
+                                                        <img src="img/celula_bacteriana.jpg" style="width:700px;height:600px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                                        <h3>4. Os vírus</h3>
+                                                        <p class="texto">Os vírus são <b>acelulares</b>, ou seja, não apresentam estrutura celular, sendo constituídos por uma macromolécula de ácido nucleico envolvida por uma cápsula de natureza proteica. São parasitas obrigatórios de células vivas, pois só se reproduzem no interior delas.</p>
+                                                        <img src="img/celula_viral.jpg" style="width:700px;height:600px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Processos de obtenção de energia -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-bio" href="#bio-energia">Processos de obtenção de energia</a>
+                                    </h4>
+                                </div>
+                                <div id="bio-energia" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <h3>1. Fotossíntese</h3>
+                                        <img src="img/fotossintese2.png" style="width:835px;height:569px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                        <img src="img/fotossintese.png" style="width:835px;height:569px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                        <img src="img/fotossintese3.png" style="width:835px;height:569px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                        <img src="img/fotossintese4.png" style="width:835px;height:569px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                        <img src="img/fotossintese5.png" style="width:835px;height:569px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                        <img src="img/fotossintese6.png" style="width:835px;height:569px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                        <img src="img/fotossintese7.png" style="width:835px;height:569px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                        <img src="img/fotossintese8.png" style="width:835px;height:569px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                        <img src="img/fotossintese_graph.png" style="width:875px;height:613px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                        <h3>2. Respiração Celular</h3>
+                                        <p class="texto">Respiração celular é a transformação dos açucares, gorduras ou proteinas em energia (moeda energética universal, ATP)</p>
+                                        <p class="texto">Glicólise: acontece a divisão de uma glicólise por meio de 2 ATP, formando no final 2 piruvatos, 2 NADH e 2 ATP.</p>
+                                        <p class="texto">Ciclo de Krebs: piruvato libera um CO2 e forma Acetil-CoA, dessa forma entrando no ciclo e formando (contando os 2 piruvatos) 2 ATP, 2 FADH2, 8 NADH e 6 CO2</p>
+                                        <p class="texto">Respiração celular: nessa etapa acontece a utilização dos NADH e FADH2, gerando muitos ATP (aproximadamente 38 somando todas as etapas anteriores, podendo variar)</p>
+                                        <img src="img/fotossintese9.png" style="width:835px;height:569px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                        <h3>3. Fermentação</h3>
+                                        <p class="texto">A fermentação é um processo de obtenção de energia que ocorre sem a presença de gás oxigênio, portanto, trata-se de uma via de produção de energia anaeróbia. Nesse processo, o aceptor final de elétrons é uma molécula orgânica. Essa via é muito utilizada por fungos, bactérias e células musculares esqueléticas de nosso corpo que estão em contração vigorosa.</p>
+                                        <p class="texto">A fermentação ocorre no citosol e inicia-se com a glicólise, quando ocorre a quebra de glicose em duas moléculas de piruvato. Percebe-se, portanto, que inicialmente esse processo é semelhante à respiração celular.</p>
+                                        <p class="texto">A fermentação láctica é comum em células musculares, bactérias, protozoários e fungos, sendo usada para a produção de iogurte, coalhada e queijos. Já a fermentação alcoólica é normalmente realizada por leveduras e bactérias, sendo bastante explorada economicamente pelo homem, principalmente para a fabricação de alimentos como o pão e de bebidas como a cerveja, vinho e destilados.</p>
+                                        <p class="texto">O rendimento da fermentação é bastante pequeno quando comparado ao da respiração celular. Enquanto nesse processo é obtido apenas 2 ATP, na respiração, temos um saldo final de 30 ATP.</p>
+                                        <p class="texto">Curiosidade: Quando estamos praticando exercícios físicos, frequentemente sentimos dor muscular, também chamada de fadiga muscular. Isso ocorre porque as células musculares não recebem a quantidade de oxigênio necessária para realizar a respiração celular e passam a quebrar glicose de forma anaeróbia, produzindo ácido láctico. O acúmulo desse ácido faz com que as pessoas sintam dor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Os ácidos nucleicos, a síntese de proteínas e o controle do metabolismo celular -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-bio" href="#bio-nucleicos">Os ácidos nucleicos, a síntese de proteínas e o controle do metabolismo celular</a>
+                                    </h4>
+                                </div>
+                                <div id="bio-nucleicos" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <h3>1. Ácidos nucleicos</h3>
+                                        <p class="texto"><b>Armazenar e transmitir informação genética</b></p>
+                                        <p class="texto">Os ácidos nucleicos são macromoléculas constituídas por nucleotídeos e que formam dois importantes componentes das células, o DNA e o RNA.
+                                        Eles recebem essa denominação pelo fato de possuírem caráter ácido e por serem encontrados no núcleo da célula.
+                                        Os ácidos nucleicos são essenciais para todas as células, pois é a partir das moléculas de DNA e RNA que são sintetizadas as proteínas, as células se multiplicam e ainda ocorre o mecanismo de transmissão das características hereditárias.
+                                        Além disso, os nucleotídeos são importantes em diversos processos, como a síntese de alguns carboidratos e lipídios e a regulação do metabolismo intermediário, ativando ou inibindo enzimas.</p>
+                                        <img src="img/nucleoide.png" style="width:1168px;height:621px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                        <img src="img/dna_e_rna.jpg" style="width:600px;height:471px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                        <img src="img/basesnitrogenadas.png" style="width:1268px;height:436px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                        <p>DNA</p>
+                                        <p class="texto"><b>AT CG - Logo, quantidade de A = T e C = G</b></p>
+                                        <img src="img/dna.png" style="width:1280px;height:768px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                        <img src="img/semiconservativa.png" style="width:1166px;height:591px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                        <p>RNA</p>
+                                        <p class="texto"><b>AU CG - É uma fita simples</b></p>
+                                        <ul class="lista">
+                                            <li>RNAm Mensageiro: leva a informção do gene até o citoplasma, resultado da transcrição</li>
+                                            <li>RNAr Ribossomico: forma o ribossomo, faz a síntese de proteinas</li>
+                                            <li>RNAt Transportador: associado a aminoácidos, levam os aminoácidos para formas as proteinas, dobra em si mesmo (forma de trevo)</li>
+                                        </ul>
+                                        <h3>2. Síntese de proteínas - RNA</h3>
+                                        <p class="texto">A síntese de proteínas é um processo rápido, que ocorre em todas as células do organismo, mais precisamente, nos ribossomos, organelas encontradas no citoplasma e no retículo endoplasmático rugoso. Esse processo pode ser dividido em três etapas:</p>
+                                        <ul class="lista">
+                                        <li><b>Transcrição</b>: A mensagem contida no cístron (porção do DNA que contém a informação genética necessária à síntese proteica) é transcrita pelo RNA mensageiro (RNAm). Nesse processo, as bases pareiam-se: a adenina do DNA se liga à uracila do RNA, a timina do DNA com a adenina do RNA, a citosina do DNA com a guanina do RNA, e assim sucessivamente, havendo a intervenção da enzima RNA-polimerase. A sequencia de 3 bases nitrogenadas de RNAm, forma o códon, responsável pela codificação dos aminoácidos. Dessa forma, a molécula de RNAm replica a mensagem do DNA, migra do núcleo para os ribossomos, atravessando os poros da membrana plasmática e forma um molde para a síntese proteica.</li>
+                                        <li><b>Ativação de aminoácidos</b>: Nessa etapa, atua o RNA transportador (RNAt), que leva os aminoácidos dispersos no citoplasma, provenientes da digestão, até os ribossomos. Numa das regiões do RNAt está o anticódon, uma sequência de 3 bases complementares ao códon de RNAm. A ativação dos aminoácidos é dada por enzimas específicas, que se unem ao RNA transportador, que forma o complexo aa-RNAt, dando origem ao anticódon, um trio de códons complementar aos códons do RNAm. Para que esse processo ocorra é preciso haver energia, que é fornecida pelo ATP.</li>
+                                        <li><b>Tradução</b>: Na fase de tradução, a mensagem contida no RNAm é decodificada e o ribossomo a utiliza para sintetizar a proteína de acordo com a informação dada.
+                                        Os ribossomos são formados por duas subunidades. Na subunidade menor, ele faz ligação ao RNAm, na subunidade maior há dois sítios (1 e 2), em que cada um desses sítios podem se unir a duas moléculas de RNAt. Uma enzima presente na subunidade maior realiza a ligação peptídica entre os aminoácidos, o RNA transportador volta ao citoplasma para se unir a outro aminoácido. E assim, o ribossomo vai percorrendo o RNAm e provocando a ligação entre os aminoácidos.<br>
+                                        O fim do processo se dá quando o ribossomo passa por um códon de terminação e nenhum RNAt entra no ribossomo, por não terem mais sequencias complementares aos códons de terminação. Então, o ribossomo se solta do RNAm, a proteína específica é formada e liberada do ribossomo.
+                                        Para formar uma proteína de 60 aminoácidos, por exemplo, é necessário 1 RNAm, 60 códons (cada um corresponde a um aminoácido), 180 bases nitrogenadas (cada sequência de 3 bases dá origem a um aminoácido), 1 ribossomo e 60 RNAt (cada RNAt transporta um aminoácido). Pode-se notar, então, que se trata de um processo altamente complexo, já que há a intervenção de vários agentes.    
+                                        </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Mitose -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-bio" href="#bio-mitose">Mitose</a>
+                                    </h4>
+                                </div>
+                                <div id="bio-mitose" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="formulas">
+                                            <h3>Mitose</h3>
+                                            <p class="texto">De forma prática, podemos entender que na mitose a célula se duplica para dar origem a duas novas células. Estas são conhecidas como células filhas (formadas a partir da divisão celular) e são idênticas uma da outra, uma vez que foram formadas a partir de uma única célula.</p>
+                                            <ul class="lista">
+                                                <li>Prófase: nesta fase, as células começam a se preparar para a divisão. É neste momento que ocorrerá a duplicação do DNA e centríolos. Com o DNA condensado e os centríolos em movimento, inicia-se o processo da divisão mitótica</li>
+                                                <li>Metáfase: aqui começa o alinhamento entre os pares formados na fase anterior. Nesta etapa, o DNA alinha-se no eixo central enquanto os centríolos iniciam sua conexão com ele. Dois fios do cromossomo se ligam na parte central do centrômero.</li>
+                                                <li>Anáfase: a divisão começa com os cromossomos migrando para lados opostos da célula, metade vai para um lado e a outra metade vai para o outro.</li>
+                                                <li>Telófase: esta é a última fase da mitose. Nesta etapa a membrana celular se divide em duas partes, formando, assim, duas novas células. Cada uma delas ficará com metade do DNA original.</li>
+                                                <li>Interfase: este é o estado “normal” da célula, ou seja, aqui ela não se encontra em divisão. Nesta fase, ela  mantém o equilíbrio de todas as suas funções através da absorção dos nutrientes necessários à sua manutenção. Ela permanecerá neste estágio até estar preparada para uma nova divisão, que ocorrerá a partir da duplicação dos ácidos nucléicos. A partir de então, o ciclo se reinicia.</li>
+                                            </ul>
+                                            <img src="img/mitose.jpg" style="width:550px;height:323px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                            <img src="img/meiose_divisaoI_anim.gif" style="width:400px;height:140px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Meiose -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-bio" href="#bio-meiose">Meiose</a>
+                                    </h4>
+                                </div>
+                                <div id="bio-meiose" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="formulas">
+                                            <h3>Meiose</h3>
+                                            <p class="texto">A meiose é a divisão celular que ocorre na formação dos gametas, reduzindo o número de cromossomos de uma espécie pela metade. Assim, uma célula-mãe diploide origina 4 células-filhas haploides diferentes da célula mãe.</p>
+                                            <img src="img/meiose.gif" style="width:500px;height:404px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                            <img src="img/meiose_divisaoI_anim2.gif" style="width:576px;height:140px;display: block;margin: 25px;margin-left: auto;margin-right: auto;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            
+        </div> 
+    </body>
+    
+</html>
