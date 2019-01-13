@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #d8d8d8;
+}
+
+h2 {
+    font-size: 46px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+h3 {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+input {
+    margin: 5px;
+    height: 25px;
+}
+
+/*ID's*/
+#app{
+    background: white;
+    width: 720px;
+    height: 100%;
+    margin: 40px auto;
+}
+
+#lista{
+	margin: auto;
+    margin-top: 20px;
+	width: 600px;
+}
+
+#lista-lista{
+    font-size: 20px;
+}
+
+#criar{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#autor{
+	font-weight: 700;
+	font-size: 16px;
+	padding: 10px;
+}
+
+#footer{
+	width: 240px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+
+/*Classes*/
