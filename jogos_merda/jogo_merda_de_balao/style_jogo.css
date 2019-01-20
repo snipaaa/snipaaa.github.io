@@ -1,0 +1,23 @@
+#jogo {
+	float: left;
+	width: auto;
+	height: 500px;
+	background: white;
+	border: 1px solid blue;
+}
+
+#cenario {
+	float: left;
+	width: 600px;
+	height: 500px;
+	background: url("imagens/cenario.png");
+	background-position: bottom;
+	border: 1px solid blue;
+}
+
+#quantidade_balao {
+	font-size: 40px;
+}
+#balao_estourados{
+	font-size: 40px;
+}

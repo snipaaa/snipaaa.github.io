@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+		<link rel="stylesheet" type="text/css" href="style_jogo.css">
+	</head>
+	
+	<body>
+		
+		<div id="jogo">
+			<table>
+				<tr>
+					<td> <img src="imagens/balao_azul_grande.png"> </td>
+					<td><span id="quantidade_balao"></span></td>
+				</tr>
+			</table>
+			<br>
+			<table>
+				<tr>
+					<td> <img src="imagens/balao_azul_grande_estourado.png"> </td>
+					<td><span id="balao_estourados"></span></td>
+				</tr>
+			</table>
+			<br>
+			<table style="width: 140px; height: 132px;">
+				<tr>
+					<td style="background: url('imagens/cronometro.png'); text-align: center;">
+						<span id="tempo" style="color: red; font-size: 30px;">60</span>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div id="cenario"></div>
+		
+		<script src="jogo.js"></script>
+	</body>	
+	
+</html>
