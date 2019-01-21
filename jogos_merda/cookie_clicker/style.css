@@ -1,0 +1,91 @@
+#jogo {
+	width: 1000px;
+	height: 600px;
+	margin: 20px auto;
+	background: url("https://vignette.wikia.nocookie.net/steamtradingcards/images/0/03/Clicker_Heroes_Background_Grasslands.jpg/revision/latest?cb=20150610051924") no-repeat;
+	background-size: contain;
+}
+
+#title {
+	font-size: 50px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#footer {
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+}
+
+#clicker{
+	width: 500px;
+	height: 100%;
+	float: left;
+}
+
+#cookie {
+	position: relative;
+	width: 256px;
+	height: 256px;
+	margin-left: 122px;
+	margin-top: 67px;
+	transition: transform 0.6s;
+}
+
+#cookie:hover {
+	transform: scale(1.1);
+}
+
+#cookie:active {
+	animation-name: click;
+	animation-duration: 0.2s;
+}
+
+#contagem {
+	width: 100px;
+	height: 30px;
+	background: #894c21;
+	border: 3px solid #683c1d;
+	border-radius: 10px;
+	margin: 20px auto;
+	text-align: center;
+	padding: 2px;
+	color: white;
+	font-size: 22px;
+}
+
+#upgrades {
+	width: 480px;
+	height: 100%;
+	float: left;
+	margin-left: 10px;
+}
+
+.upgrade {
+	width: 270px;
+	height: 50px;
+	margin: 5px auto;
+	background: black;
+}
+
+.evoluir {
+	height: 100%;
+	width: 80px;
+	background: green;
+}
+.nome-eve {
+	color: white;
+	font-size: 20px;
+	margin-left: 10px;
+}
+
+/*Animações*/
+@keyframes click {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(0.8);
+	}
+}
