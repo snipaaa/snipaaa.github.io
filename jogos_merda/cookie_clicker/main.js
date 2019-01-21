@@ -1,8 +1,7 @@
 var cookie = document.querySelector("#cookie");
 var cookie_quantidade = document.querySelector("#num-contagem");
 var upgrades = [];
-upgrades["mouse"] = 0;
-upgrades["mouse-mult"] = 1;
+upgrades["mouse"] = 1;
 upgrades["mouse-custo"] = 20;
 upgrades["fazenda"] = 0;
 upgrades["fazenda-mult"] = 1;
@@ -13,7 +12,7 @@ upgrades["industria-custo"] = 3000;
 
 cookie.onclick = function() {
 	var quantidade = parseInt(cookie_quantidade.innerHTML);
-	
+		
 	cookie_quantidade.innerHTML = "";
 	cookie_quantidade.innerHTML = quantidade + upgrades["mouse"];
 }
@@ -22,7 +21,7 @@ var upgrade_mouse = document.querySelector("#up-mouse");
 var mouse_level = document.querySelector("#up-mouse-level");
 var mouse_up_button = document.querySelector("#up-mouse");
 upgrade_mouse.onclick = function() {
-	var custo = upgrades["mouse-mult"] * upgrades["mouse-custo"]
+	var custo = upgrades["mouse"] * upgrades["mouse-custo"]
 	var quantidade = parseInt(cookie_quantidade.innerHTML);
 	
 	if (quantidade >= custo) {
@@ -51,13 +50,14 @@ upgrade_fazenda.onclick = function() {
 	if (quantidade >= custo) {
 		quantidade = quantidade - custo;
 		upgrades["fazenda"]++;
+		upgrades["fazenda-mult"]++;
 		cookiePs += 1;
 		
 		fazenda_level.innerHTML = "";
 		fazenda_level.innerHTML = upgrades["fazenda"];
 		
 		fazenda_up_button.innerHTML = "";
-		fazenda_up_button.innerHTML = "$" + (upgrades["fazenda"] * upgrades["fazenda-custo"]);
+		fazenda_up_button.innerHTML = "$" + (upgrades["fazenda-mult"] * upgrades["fazenda-custo"]);
 		
 		cookie_quantidade.innerHTML = "";
 		cookie_quantidade.innerHTML = quantidade;
@@ -78,13 +78,14 @@ upgrade_industria.onclick = function() {
 	if (quantidade >= custo) {
 		quantidade = quantidade - custo;
 		upgrades["industria"]++;
+		upgrades["industria-mult"]++;
 		cookiePs += 20;
 		
 		industria_level.innerHTML = "";
 		industria_level.innerHTML = upgrades["industria"];
 		
 		industria_up_button.innerHTML = "";
-		industria_up_button.innerHTML = "$" + (upgrades["industria"] * upgrades["industria-custo"]);
+		industria_up_button.innerHTML = "$" + (upgrades["industria-mult"] * upgrades["industria-custo"]);
 		
 		cookie_quantidade.innerHTML = "";
 		cookie_quantidade.innerHTML = quantidade;
